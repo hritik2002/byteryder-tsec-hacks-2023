@@ -2,7 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const connectToAtlas = require("./utils/dbconnect.js");
 
-const port = 5000
+const port = 8000;
 connectToAtlas();
 
 const app = express();
