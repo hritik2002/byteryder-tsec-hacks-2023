@@ -3,10 +3,9 @@ import { LoginUserFn } from "./api/index";
 
 const Login = () => {
   const [email, setEmail] = useState("");
-  const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     const details = {
@@ -14,10 +13,7 @@ const Login = () => {
       password,
     };
 
-    const valid = LoginUserFn(details);
-    console.log(valid, "fasdljfasljfasldjfadsl")
-
-    // Add your submit logic here
+    const valid = await LoginUserFn(details);
   };
 
   return (
@@ -26,21 +22,6 @@ const Login = () => {
         className="bg-white p-6 rounded-lg shadow-md"
         onSubmit={handleSubmit}
       >
-        <div className="mb-4">
-          <label
-            className="block text-gray-700 font-medium mb-2"
-            htmlFor="username"
-          >
-            Username
-          </label>
-          <input
-            className="w-full border border-gray-400 p-2"
-            type="text"
-            id="username"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
-          />
-        </div>
         <div className="mb-4">
           <label
             className="block text-gray-700 font-medium mb-2"
