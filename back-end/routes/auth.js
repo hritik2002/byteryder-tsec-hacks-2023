@@ -83,7 +83,6 @@ router.post("/createuser", async (req, res) => {
 router.post("/login", async (req, res) => {
     let success = false;
     try{
-        console.log(req.body);
         const user = await Customers.findOne({email : req.body.email});
         if(!user){
             return res.send({

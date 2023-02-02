@@ -7,7 +7,7 @@ const HouseProfile = () => {
       <Navbar />
       <main class="profile-page">
         <section class="relative block min-h-[75vh]">
-          <div class="background absolute top-0 w-full h-full bg-center bg-cover">
+          <div class="background-house absolute top-0 w-full h-full bg-center bg-cover">
             <span
               id="blackOverlay"
               class="w-full h-full absolute bg-[rgb(181, 140, 17)]"
@@ -44,55 +44,71 @@ const HouseProfile = () => {
                       /> */}
                     </div>
                   </div>
-                  <div class="w-full lg:w-4/12 px-4 lg:order-3 lg:text-right lg:self-center">
-                    <div class="py-6 px-3 mt-32 sm:mt-0">
-                      <button
-                        class="bg-blue-500 hover:bg-blue-600 uppercase text-white font-bold hover:shadow-md shadow text-md px-6 py-3 rounded outline-none focus:outline-none sm:mr-2 mb-1 ease-linear transition-all duration-150"
-                        type="button"
-                      >
-                        Connect
-                      </button>
-                    </div>
-                  </div>
-                  <div class="w-full lg:w-4/12 px-4 lg:order-1">
+
+                  <div class="w-full lg:w-4/12 px-4 lg:order-1 mr-[3em]">
                     <div class="flex justify-center py-4 lg:pt-4 pt-8">
                       <div class="mr-4 p-3 text-center">
                         <span class="text-xl font-bold block uppercase tracking-wide text-blueGray-600">
-                          20
+                          Maharashtra
                         </span>
-                        <span class="text-sm text-blueGray-400">Age</span>
+                        <span class="text-sm text-blueGray-400">State</span>
                       </div>
                       <div class="mr-4 p-3 text-center">
                         <span class="text-xl font-bold block capitalize tracking-wide text-blueGray-600">
-                          Male
+                          Mumbai
                         </span>
-                        <span class="text-sm text-blueGray-400">Gender</span>
+                        <span class="text-sm text-blueGray-400">City</span>
                       </div>
+                    </div>
+                  </div>
+                  <div class="w-full lg:w-4/12 px-4 lg:order-3 flex ml-[3em] translate-x-[1em] relative">
+                    <div class="flex justify-center py-4 lg:pt-4 pt-8">
                       <div class="lg:mr-4 p-3 text-center">
                         <span class="text-xl font-bold block capitalize tracking-wide text-blueGray-600">
-                          unmarried
+                          400051
                         </span>
-                        <span class="text-sm text-blueGray-400">Status</span>
+                        <span class="text-sm text-blueGray-400">Pincode</span>
+                      </div>
+                    </div>
+                    {/* <div class="flex justify-center py-4 lg:pt-4 pt-8">
+                      <div class="lg:mr-4 p-3 text-center">
+                        <span class="text-xl font-bold block capitalize tracking-wide text-blueGray-600">
+                          400051
+                        </span>
+                        <span class="text-sm text-blueGray-400">Pincode</span>
+                      </div>
+                    </div> */}
+                    <div class="w-full lg:w-4/12 px-4 lg:text-right lg:self-center">
+                      <div class="py-6 px-3 sm:mt-0">
+                        <button
+                          class="border-solid border-2 border-black-100 bg-white hover:bg-blue-300 uppercase text-black font-bold hover:shadow-md shadow text-md px-6 py-3 rounded outline-none focus:outline-none sm:mr-2 mb-1 ease-linear transition-all duration-150"
+                          type="button"
+                        >
+                          Interested
+                        </button>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div class="text-center mt-2">
                   <h3 class="text-4xl font-semibold leading-normal text-blueGray-700 mb-2">
-                    Jenna Stones
+                    Maple Crest{" "}
+                    <p className="text-2xl font-normal">4.5 stars</p>
                   </h3>
                   <div class="text-sm leading-normal mt-0 mb-2 text-blueGray-400 font-bold uppercase">
                     <i class="fas fa-map-marker-alt mr-2 text-lg text-blueGray-400"></i>
-                    Bandra West, Mumbai
+                    Near Thadomal Shahani Engineering College, Bandra West,
+                    Mumbai
                   </div>
                   <ul className="list-disc w-fit mx-auto">
                     <li class="mb-2 text-blueGray-600 mt-10 text-left">
                       {/* <i class="fas fa-briefcase mr-2 text-lg text-blueGray-400"></i> */}
-                      Currently working as a Software Developer
+                      <b>12</b> People are currently interested in renting this
+                      room
                     </li>
                     <li class="mb-2 text-blueGray-600 text-left">
                       {/* <i class="fas fa-university mr-2 text-lg text-blueGray-400"></i> */}
-                      Undergraduate, Studying Computer engineering at TSEC
+                      Safety Rating: <b>8.9</b>
                     </li>
                     <li class="mb-2 text-blueGray-600 text-left">
                       {/* <i class="fas fa-university mr-2 text-lg text-blueGray-400"></i> */}
@@ -109,11 +125,14 @@ const HouseProfile = () => {
                   <div class="flex flex-wrap justify-center">
                     <div class="w-full lg:w-9/12 px-4">
                       <p class="mb-4 text-lg leading-relaxed text-blueGray-700">
-                        An artist of considerable range, Jenna the name taken by
-                        Melbourne-raised, Brooklyn-based Nick Murphy writes,
-                        performs and records all of his own music, giving it a
-                        warm, intimate feel with a solid groove structure. An
-                        artist of considerable range.
+                        Nearby Food places: Hotel1, Restaurant nine, ravi rice,
+                        KFC.
+                      </p>
+                      <p class="mb-4 text-lg leading-relaxed text-blueGray-700">
+                        Nearby Shops: Organic Grocery Market, TSEC Mall.
+                      </p>
+                      <p class="mb-4 text-lg leading-relaxed text-blueGray-700">
+                        Landmarks: Candies, National College
                       </p>
                       {/* <a href="#pablo" class="font-normal text-pink-500">
                         Show more
