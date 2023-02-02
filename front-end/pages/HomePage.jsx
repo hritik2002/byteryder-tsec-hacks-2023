@@ -46,7 +46,11 @@ const HomePage = () => {
           </div>
         </div>
         <div className="img-wrapper absolute right-[5vw] w-[36%] translate-y-[20vh]">
-          <img className="w-11/12" src="/hero-img-2.png"></img>
+          <img
+            className="w-11/12"
+            src="/hero-img-2.png"
+            alt="house and roommate image"
+          ></img>
         </div>
       </div>
     </div>

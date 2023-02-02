@@ -4,8 +4,31 @@
   font-family: "Poppins";
 }
 
-.btn-wrapper > button {
+.btn-wrapper > button,
+.room-card-wrapper {
   box-shadow: 0px 0px 32px 3px rgba(0, 0, 0, 0.1);
+}
+
+.content-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  gap: 4em 0;
+}
+
+.room-card-wrapper img {
+  width: 100%;
+  /* height: 36vh; */
+  height: 10em;
+  object-fit: cover;
+  object-position: center 50%;
+}
+
+.view-more > svg {
+  height: 1.25em;
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
 }
 
 a {
