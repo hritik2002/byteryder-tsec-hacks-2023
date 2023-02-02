@@ -21,10 +21,10 @@ function Navbar() {
       <div>
         <ul className="flex">
           <li className="nav-item cursor-pointer hover:opacity-50">
-            <a href="#">Log in</a>
+            <a href="/Login">Log in</a>
           </li>
           <li className="nav-item ml-[3em] cursor-pointer hover:opacity-50">
-            <a href="#">Register</a>
+            <a href="/Login">Register</a>
           </li>
         </ul>
       </div>

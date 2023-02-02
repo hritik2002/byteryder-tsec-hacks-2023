@@ -10,6 +10,7 @@ function FindMatch() {
 
   const getAllPlacesFn = async () => {
     const data = await getPlacesData();
+    console.log(data);
     setRoomData(data);
   };
 

@@ -17,9 +17,13 @@ const Login = () => {
   };
 
   return (
-    <div className="flex justify-center items-center h-screen">
+    <div className="flex flex-col justify-center items-center h-screen">
+      <h2 className="text-[2.5em] font-bold">Roomie</h2>
+      <h1 className="text-[2em] font-semibold mt-[0.5em] mb-[1em]">
+        Login to your account
+      </h1>
       <form
-        className="bg-white p-6 rounded-lg shadow-md"
+        className="bg-[#FEF3D3] p-6 mb-[2em] rounded-lg shadow-md w-[25vw]"
         onSubmit={handleSubmit}
       >
         <div className="mb-4">
@@ -52,13 +56,21 @@ const Login = () => {
             onChange={(e) => setPassword(e.target.value)}
           />
         </div>
-        <button
-          className="bg-indigo-500 hover:bg-indigo-600 text-white font-medium py-2 px-4 rounded"
-          type="submit"
-        >
-          Login
-        </button>
+        <div className="btn-wrapper flex justify-between">
+          <button
+            className="bg-green-700 hover:bg-[#f7ca48] text-white font-medium py-2 px-4 my-4 rounded w-full"
+            type="submit"
+          >
+            Login
+          </button>
+        </div>
       </form>
+      <p>
+        New user?{" "}
+        <a className="text-blue-700" href="/">
+          Register
+        </a>
+      </p>
     </div>
   );
 };

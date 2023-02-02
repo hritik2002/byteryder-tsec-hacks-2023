@@ -1,829 +1,798 @@
-
 [
-    {
-        "location_id": "2034920",
-        "name": "Prem Acharya",
-        "latitude": "19.101932",
-        "longitude": "72.853125",
-        "timezone": "Asia/Kolkata",
-        "location_string": "Mumbai, Maharashtra",
-        "image": {
-          "url": "url"
-        },
-        "interested_users": [],
-        "distance": "4.008306106030764",
-        "distance_string": "4 km",
-        "price_level": "Rs. 20,000/- per month",
-        "rent": "Rs.1,500 - Rs.3,000",
-        "neighborhood_info": [
-          {
-            "location_id": "15621466",
-            "name": "Andheri East"
-          }
-        ],
-        "ride_providers": [
-          "olaCabs"
-        ],
-        "description": "Namak - the Indian Specialty restaurant exudes the contemporary food, super luxe ambience which takes the discerning taste buds on a delectable treat. With a menu reminiscent of the Royal Kitchens of India, the culinary delights on offer create magic with fragrant spices conjuring up a meal fit for a king.",
-        "phone": "+91 22 3980 7444",
-        "email": "info@saharastar.com",
-        "address_obj": {
-          "street1": "Hotel Sahara Star, Western Express Highway, Vile Parle East",
-          "street2": "Hotel Sahara Star",
-          "city": "Mumbai",
-          "state": "Maharashtra",
-          "country": "India",
-          "postalcode": "400057"
-        },
-        "address": "B/202, Ashirwad Complex, S.V. Road, Malad West",
-        "dietary_restrictions": [
-          {
-            "key": "10665",
-            "name": "2BHK"
-          },
-          {
-            "key": "10697",
-            "name": "1280 sqft"
-          },
-          {
-            "key": "10751",
-            "name": "2-4 people"
-          },
-          {
-            "key": "10992",
-            "name": ""
-          }
-        ]
-      },
+  {
+    "location_id": "2034920",
+    "name": "Prem Acharya",
+    "latitude": "19.101932",
+    "longitude": "72.853125",
+    "timezone": "Asia/Kolkata",
+    "location_string": "Mumbai, Maharashtra",
+    "image": {
+      "url": "https://res.cloudinary.com/techitcloud/image/upload/v1675359825/house-pic_lnoukc.jpg"
+    },
+    "interested_users": [],
+    "distance": "4.008306106030764",
+    "distance_string": "4 km",
+    "price_level": "Rs. 20,000/- per month",
+    "rent": "Rs.1,500 - Rs.3,000",
+    "neighborhood_info": [
       {
-        "location_id": "2034920",
-        "name": "Viren Agicha",
-        "latitude": "19.063160",
-        "longitude": "72.832684",
-        "timezone": "Asia/Kolkata",
-        "location_string": "Mumbai, Maharashtra",
-        "image": {
-          "url": "url"
-        },
-        "interested_users": [],
-        "distance": "4.008306106030764",
-        "distance_string": "4 km",
-        "price_level": "Rs. 21,000/- per month",
-        "rent": "Rs.1,500 - Rs.3,000",
-        "neighborhood_info": [
-          {
-            "location_id": "15621466",
-            "name": "Andheri East"
-          }
-        ],
-        "ride_providers": [
-          "olaCabs"
-        ],
-        "description": "Namak - the Indian Specialty restaurant exudes the contemporary food, super luxe ambience which takes the discerning taste buds on a delectable treat. With a menu reminiscent of the Royal Kitchens of India, the culinary delights on offer create magic with fragrant spices conjuring up a meal fit for a king.",
-        "phone": "+91 22 3980 7444",
-        "email": "info@saharastar.com",
-        "address_obj": {
-          "street1": "Hotel Sahara Star, Western Express Highway, Vile Parle East",
-          "street2": "Hotel Sahara Star",
-          "city": "Mumbai",
-          "state": "Maharashtra",
-          "country": "India",
-          "postalcode": "400057"
-        },
-        "address": "201, Balaji Niwas, Linking Road, Bandra West, Mumbai",
-        "dietary_restrictions": [
-          {
-            "key": "10665",
-            "name": "1BHK"
-          },
-          {
-            "key": "10697",
-            "name": "1180 sqft"
-          },
-          {
-            "key": "10751",
-            "name": "2-3 people"
-          },
-          {
-            "key": "10992",
-            "name": "Gymniaium"
-          }
-        ]
-      },
-      {
-        "location_id": "2034920",
-        "name": "Aditya Alisinghania",
-        "latitude": "19.104528",
-        "longitude": "72.850892",
-        "timezone": "Asia/Kolkata",
-        "location_string": "Mumbai, Maharashtra",
-        "image": {
-          "url": "url"
-        },
-        "interested_users": [],
-        "distance": "4.008306106030764",
-        "distance_string": "4 km",
-        "price_level": "Rs. 19,500/- per month",
-        "rent": "Rs.1,500 - Rs.3,000",
-        "neighborhood_info": [
-          {
-            "location_id": "15621466",
-            "name": "Andheri East"
-          }
-        ],
-        "ride_providers": [
-          "olaCabs"
-        ],
-        "description": "Namak - the Indian Specialty restaurant exudes the contemporary food, super luxe ambience which takes the discerning taste buds on a delectable treat. With a menu reminiscent of the Royal Kitchens of India, the culinary delights on offer create magic with fragrant spices conjuring up a meal fit for a king.",
-        "phone": "+91 22 3980 7444",
-        "email": "info@saharastar.com",
-        "address_obj": {
-          "street1": "Hotel Sahara Star, Western Express Highway, Vile Parle East",
-          "street2": "Hotel Sahara Star",
-          "city": "Mumbai",
-          "state": "Maharashtra",
-          "country": "India",
-          "postalcode": "400057"
-        },
-        "address": "1001, Sky Tower, New Link Road, Andheri West",
-        "dietary_restrictions": [
-          {
-            "key": "10665",
-            "name": "4BHK"
-          },
-          {
-            "key": "10697",
-            "name": "580 sqft"
-          },
-          {
-            "key": "10751",
-            "name": "2-3 people"
-          },
-          {
-            "key": "10992",
-            "name": "Gymniaium"
-          }
-        ]
-      },
-      {
-        "location_id": "2034920",
-        "name": "Amaan Ansari",
-        "latitude": "18.953816",
-        "longitude": "72.823392",
-        "timezone": "Asia/Kolkata",
-        "location_string": "Mumbai, Maharashtra",
-        "image": {
-          "url": "url"
-        },
-        "interested_users": [],
-        "distance": "4.008306106030764",
-        "distance_string": "4 km",
-        "price_level": "Rs. 18,500/- per month",
-        "rent": "Rs.1,500 - Rs.3,000",
-        "neighborhood_info": [
-          {
-            "location_id": "15621466",
-            "name": "Andheri East"
-          }
-        ],
-        "ride_providers": [
-          "olaCabs"
-        ],
-        "description": "Namak - the Indian Specialty restaurant exudes the contemporary food, super luxe ambience which takes the discerning taste buds on a delectable treat. With a menu reminiscent of the Royal Kitchens of India, the culinary delights on offer create magic with fragrant spices conjuring up a meal fit for a king.",
-        "phone": "+91 22 3980 7444",
-        "email": "info@saharastar.com",
-        "address_obj": {
-          "street1": "Hotel Sahara Star, Western Express Highway, Vile Parle East",
-          "street2": "Hotel Sahara Star",
-          "city": "Mumbai",
-          "state": "Maharashtra",
-          "country": "India",
-          "postalcode": "400057"
-        },
-        "address": "Flat No. 504, Ocean View, Marine Drive, Mumbai",
-        "dietary_restrictions": [
-          {
-            "key": "10665",
-            "name": "2BHK"
-          },
-          {
-            "key": "10697",
-            "name": "570 sqft"
-          },
-          {
-            "key": "10751",
-            "name": "1-3 people"
-          },
-          {
-            "key": "10992",
-            "name": "Swimming Pool"
-          }
-        ]
-      },
-      {
-        "location_id": "2034920",
-        "name": "Rachit Arora",
-        "latitude": "19.115118",
-        "longitude": "72.833415",
-        "timezone": "Asia/Kolkata",
-        "location_string": "Mumbai, Maharashtra",
-        "image": {
-          "url": "url"
-        },
-        "interested_users": [],
-        "distance": "4.008306106030764",
-        "distance_string": "4 km",
-        "price_level": "Rs. 23,500/- per month",
-        "rent": "Rs.1,500 - Rs.3,000",
-        "neighborhood_info": [
-          {
-            "location_id": "15621466",
-            "name": "Andheri East"
-          }
-        ],
-        "ride_providers": [
-          "olaCabs"
-        ],
-        "description": "Namak - the Indian Specialty restaurant exudes the contemporary food, super luxe ambience which takes the discerning taste buds on a delectable treat. With a menu reminiscent of the Royal Kitchens of India, the culinary delights on offer create magic with fragrant spices conjuring up a meal fit for a king.",
-        "phone": "+91 22 3980 7444",
-        "email": "info@saharastar.com",
-        "address_obj": {
-          "street1": "Hotel Sahara Star, Western Express Highway, Vile Parle East",
-          "street2": "Hotel Sahara Star",
-          "city": "Mumbai",
-          "state": "Maharashtra",
-          "country": "India",
-          "postalcode": "400057"
-        },
-        "address": "8th Floor, Asha Kiran, Juhu Tara Road, Mumbai",
-        "dietary_restrictions": [
-          {
-            "key": "10665",
-            "name": "1BHK"
-          },
-          {
-            "key": "10697",
-            "name": "820 sqft"
-          },
-          {
-            "key": "10751",
-            "name": "1 person"
-          },
-          {
-            "key": "10992",
-            "name": "Gymniaium"
-          }
-        ]
-      },
-      {
-        "location_id": "2034920",
-        "name": "Jay Aslaliya",
-        "latitude": "19.106961",
-        "longitude": "72.833841",
-        "timezone": "Asia/Kolkata",
-        "location_string": "Mumbai, Maharashtra",
-        "image": {
-          "url": "url"
-        },
-        "interested_users": [],
-        "distance": "4.008306106030764",
-        "distance_string": "4 km",
-        "price_level": "Rs. 27,500/- per month",
-        "rent": "Rs.1,500 - Rs.3,000",
-        "neighborhood_info": [
-          {
-            "location_id": "15621466",
-            "name": "Andheri East"
-          }
-        ],
-        "ride_providers": [
-          "olaCabs"
-        ],
-        "description": "Namak - the Indian Specialty restaurant exudes the contemporary food, super luxe ambience which takes the discerning taste buds on a delectable treat. With a menu reminiscent of the Royal Kitchens of India, the culinary delights on offer create magic with fragrant spices conjuring up a meal fit for a king.",
-        "phone": "+91 22 3980 7444",
-        "email": "info@saharastar.com",
-        "address_obj": {
-          "street1": "Hotel Sahara Star, Western Express Highway, Vile Parle East",
-          "street2": "Hotel Sahara Star",
-          "city": "Mumbai",
-          "state": "Maharashtra",
-          "country": "India",
-          "postalcode": "400057"
-        },
-        "address": "501, Jay Vijay, S.V. Road, Santacruz West.",
-        "dietary_restrictions": [
-          {
-            "key": "10665",
-            "name": "3BHK"
-          },
-          {
-            "key": "10697",
-            "name": "790 sqft"
-          },
-          {
-            "key": "10751",
-            "name": "1-3 people"
-          },
-          {
-            "key": "10992",
-            "name": "Swimming Pool"
-          }
-        ]
-      },
-      {
-        "location_id": "2034920",
-        "name": "Riya Bajaj",
-        "latitude": "19.021782",
-        "longitude": "72.848736",
-        "timezone": "Asia/Kolkata",
-        "location_string": "Mumbai, Maharashtra",
-        "image": {
-          "url": "url"
-        },
-        "interested_users": [],
-        "distance": "4.008306106030764",
-        "distance_string": "4 km",
-        "price_level": "Rs. 25,000/- per month",
-        "rent": "Rs.1,500 - Rs.3,000",
-        "neighborhood_info": [
-          {
-            "location_id": "15621466",
-            "name": "Andheri East"
-          }
-        ],
-        "ride_providers": [
-          "olaCabs"
-        ],
-        "description": "Namak - the Indian Specialty restaurant exudes the contemporary food, super luxe ambience which takes the discerning taste buds on a delectable treat. With a menu reminiscent of the Royal Kitchens of India, the culinary delights on offer create magic with fragrant spices conjuring up a meal fit for a king.",
-        "phone": "+91 22 3980 7444",
-        "email": "info@saharastar.com",
-        "address_obj": {
-          "street1": "Hotel Sahara Star, Western Express Highway, Vile Parle East",
-          "street2": "Hotel Sahara Star",
-          "city": "Mumbai",
-          "state": "Maharashtra",
-          "country": "India",
-          "postalcode": "400057"
-        },
-        "address": "602, Swastik Tower, Sion Circle, Mumbai",
-        "dietary_restrictions": [
-          {
-            "key": "10665",
-            "name": "1BHK"
-          },
-          {
-            "key": "10697",
-            "name": "470 sqft"
-          },
-          {
-            "key": "10751",
-            "name": "1-4 people"
-          },
-          {
-            "key": "10992",
-            "name": "Gymniaium"
-          }
-        ]
-      },
-      {
-        "location_id": "2034920",
-        "name": "Shriya Bhat",
-        "latitude": "19.087657",
-        "longitude": "72.906757",
-        "timezone": "Asia/Kolkata",
-        "location_string": "Mumbai, Maharashtra",
-        "image": {
-          "url": "url"
-        },
-        "interested_users": [],
-        "distance": "4.008306106030764",
-        "distance_string": "4 km",
-        "price_level": "Rs. 23,000/- per month",
-        "rent": "Rs.1,500 - Rs.3,000",
-        "neighborhood_info": [
-          {
-            "location_id": "15621466",
-            "name": "Andheri East"
-          }
-        ],
-        "ride_providers": [
-          "olaCabs"
-        ],
-        "description": "Namak - the Indian Specialty restaurant exudes the contemporary food, super luxe ambience which takes the discerning taste buds on a delectable treat. With a menu reminiscent of the Royal Kitchens of India, the culinary delights on offer create magic with fragrant spices conjuring up a meal fit for a king.",
-        "phone": "+91 22 3980 7444",
-        "email": "info@saharastar.com",
-        "address_obj": {
-          "street1": "Hotel Sahara Star, Western Express Highway, Vile Parle East",
-          "street2": "Hotel Sahara Star",
-          "city": "Mumbai",
-          "state": "Maharashtra",
-          "country": "India",
-          "postalcode": "400057"
-        },
-        "address": "9th Floor, Shree Laxmi Palace, L.B.S. Road, Ghatkopar West",
-        "dietary_restrictions": [
-          {
-            "key": "10665",
-            "name": "2BHK"
-          },
-          {
-            "key": "10697",
-            "name": "680 sqft"
-          },
-          {
-            "key": "10751",
-            "name": "1-4 people"
-          },
-          {
-            "key": "10992",
-            "name": "Gymniaium"
-          }
-        ]
-      },
-      {
-        "location_id": "2034920",
-        "name": "Leena Kamlesh",
-        "latitude": "19.120470",
-        "longitude": "72.851315",
-        "timezone": "Asia/Kolkata",
-        "location_string": "Mumbai, Maharashtra",
-        "image": {
-          "url": "url"
-        },
-        "interested_users": [],
-        "distance": "4.008306106030764",
-        "distance_string": "4 km",
-        "price_level": "Rs. 33,000/- per month",
-        "rent": "Rs.1,500 - Rs.3,000",
-        "neighborhood_info": [
-          {
-            "location_id": "15621466",
-            "name": "Andheri East"
-          }
-        ],
-        "ride_providers": [
-          "olaCabs"
-        ],
-        "description": "Namak - the Indian Specialty restaurant exudes the contemporary food, super luxe ambience which takes the discerning taste buds on a delectable treat. With a menu reminiscent of the Royal Kitchens of India, the culinary delights on offer create magic with fragrant spices conjuring up a meal fit for a king.",
-        "phone": "+91 22 3980 7444",
-        "email": "info@saharastar.com",
-        "address_obj": {
-          "street1": "Hotel Sahara Star, Western Express Highway, Vile Parle East",
-          "street2": "Hotel Sahara Star",
-          "city": "Mumbai",
-          "state": "Maharashtra",
-          "country": "India",
-          "postalcode": "400057"
-        },
-        "address": "3rd Floor, Sagar Shrusti, Andheri Kurla Road, Andheri East",
-        "dietary_restrictions": [
-          {
-            "key": "10665",
-            "name": "1BHK"
-          },
-          {
-            "key": "10697",
-            "name": "1360 sqft"
-          },
-          {
-            "key": "10751",
-            "name": "1-2 people"
-          },
-          {
-            "key": "10992",
-            "name": "Swimming Pool"
-          }
-        ]
-      },
-      {
-        "location_id": "2034920",
-        "name": "Manish Bhatia",
-        "latitude": "19.086569",
-        "longitude": "72.840064",
-        "timezone": "Asia/Kolkata",
-        "location_string": "Mumbai, Maharashtra",
-        "image": {
-          "url": "url"
-        },
-        "interested_users": [],
-        "distance": "4.008306106030764",
-        "distance_string": "4 km",
-        "price_level": "Rs. 30,000/- per month",
-        "rent": "Rs.1,500 - Rs.3,000",
-        "neighborhood_info": [
-          {
-            "location_id": "15621466",
-            "name": "Andheri East"
-          }
-        ],
-        "ride_providers": [
-          "olaCabs"
-        ],
-        "description": "Namak - the Indian Specialty restaurant exudes the contemporary food, super luxe ambience which takes the discerning taste buds on a delectable treat. With a menu reminiscent of the Royal Kitchens of India, the culinary delights on offer create magic with fragrant spices conjuring up a meal fit for a king.",
-        "phone": "+91 22 3980 7444",
-        "email": "info@saharastar.com",
-        "address_obj": {
-          "street1": "Hotel Sahara Star, Western Express Highway, Vile Parle East",
-          "street2": "Hotel Sahara Star",
-          "city": "Mumbai",
-          "state": "Maharashtra",
-          "country": "India",
-          "postalcode": "400057"
-        },
-        "address": "201, Ambika Niwas, S.V. Road, Santacruz West",
-        "dietary_restrictions": [
-          {
-            "key": "10665",
-            "name": "1BHK"
-          },
-          {
-            "key": "10697",
-            "name": "1060 sqft"
-          },
-          {
-            "key": "10751",
-            "name": "2 people"
-          },
-          {
-            "key": "10992",
-            "name": "Gymniaium"
-          }
-        ]
-      },
-      {
-        "location_id": "2034920",
-        "name": "Piyush Bhatia",
-        "latitude": "19.016716",
-        "longitude": "72.833622",
-        "timezone": "Asia/Kolkata",
-        "location_string": "Mumbai, Maharashtra",
-        "image": {
-          "url": "url"
-        },
-        "interested_users": [],
-        "distance": "4.008306106030764",
-        "distance_string": "4 km",
-        "price_level": "Rs. 28,000/- per month",
-        "rent": "Rs.1,500 - Rs.3,000",
-        "neighborhood_info": [
-          {
-            "location_id": "15621466",
-            "name": "Andheri East"
-          }
-        ],
-        "ride_providers": [
-          "olaCabs"
-        ],
-        "description": "Namak - the Indian Specialty restaurant exudes the contemporary food, super luxe ambience which takes the discerning taste buds on a delectable treat. With a menu reminiscent of the Royal Kitchens of India, the culinary delights on offer create magic with fragrant spices conjuring up a meal fit for a king.",
-        "phone": "+91 22 3980 7444",
-        "email": "info@saharastar.com",
-        "address_obj": {
-          "street1": "Hotel Sahara Star, Western Express Highway, Vile Parle East",
-          "street2": "Hotel Sahara Star",
-          "city": "Mumbai",
-          "state": "Maharashtra",
-          "country": "India",
-          "postalcode": "400057"
-        },
-        "address": "6th Floor, Udyog Bhavan, G.M. Bhosale Marg, Worli",
-        "dietary_restrictions": [
-          {
-            "key": "10665",
-            "name": "2BHK"
-          },
-          {
-            "key": "10697",
-            "name": "1330 sqft"
-          },
-          {
-            "key": "10751",
-            "name": "1-4 people"
-          },
-          {
-            "key": "10992",
-            "name": "Parking"
-          }
-        ]
-      },
-      {
-        "location_id": "2034920",
-        "name": "Omkar Bhosle",
-        "latitude": "19.183179",
-        "longitude": "72.841881",
-        "timezone": "Asia/Kolkata",
-        "location_string": "Mumbai, Maharashtra",
-        "image": {
-          "url": "url"
-        },
-        "interested_users": [],
-        "distance": "4.008306106030764",
-        "distance_string": "4 km",
-        "price_level": "Rs. 24,500/- per month",
-        "rent": "Rs.1,500 - Rs.3,000",
-        "neighborhood_info": [
-          {
-            "location_id": "15621466",
-            "name": "Andheri East"
-          }
-        ],
-        "ride_providers": [
-          "olaCabs"
-        ],
-        "description": "Namak - the Indian Specialty restaurant exudes the contemporary food, super luxe ambience which takes the discerning taste buds on a delectable treat. With a menu reminiscent of the Royal Kitchens of India, the culinary delights on offer create magic with fragrant spices conjuring up a meal fit for a king.",
-        "phone": "+91 22 3980 7444",
-        "email": "info@saharastar.com",
-        "address_obj": {
-          "street1": "Hotel Sahara Star, Western Express Highway, Vile Parle East",
-          "street2": "Hotel Sahara Star",
-          "city": "Mumbai",
-          "state": "Maharashtra",
-          "country": "India",
-          "postalcode": "400057"
-        },
-        "address": "204, Rajlaxmi Niwas, Link Road, Malad West",
-        "dietary_restrictions": [
-          {
-            "key": "10665",
-            "name": "2BHK"
-          },
-          {
-            "key": "10697",
-            "name": "390 sqft"
-          },
-          {
-            "key": "10751",
-            "name": "1-4 people"
-          },
-          {
-            "key": "10992",
-            "name": "Parking"
-          }
-        ]
-      },
-      {
-        "location_id": "2034920",
-        "name": "Mohit Chanchalani",
-        "latitude": "19.021619",
-        "longitude": "72.838090",
-        "timezone": "Asia/Kolkata",
-        "location_string": "Mumbai, Maharashtra",
-        "image": {
-          "url": "url"
-        },
-        "interested_users": [],
-        "distance": "4.008306106030764",
-        "distance_string": "4 km",
-        "price_level": "Rs. 20,500/- per month",
-        "rent": "Rs.1,500 - Rs.3,000",
-        "neighborhood_info": [
-          {
-            "location_id": "15621466",
-            "name": "Andheri East"
-          }
-        ],
-        "ride_providers": [
-          "olaCabs"
-        ],
-        "description": "Namak - the Indian Specialty restaurant exudes the contemporary food, super luxe ambience which takes the discerning taste buds on a delectable treat. With a menu reminiscent of the Royal Kitchens of India, the culinary delights on offer create magic with fragrant spices conjuring up a meal fit for a king.",
-        "phone": "+91 22 3980 7444",
-        "email": "info@saharastar.com",
-        "address_obj": {
-          "street1": "Hotel Sahara Star, Western Express Highway, Vile Parle East",
-          "street2": "Hotel Sahara Star",
-          "city": "Mumbai",
-          "state": "Maharashtra",
-          "country": "India",
-          "postalcode": "400057"
-        },
-        "address": "7th Floor, Shanti Niwas, Dadar T.T., Mumbai",
-        "dietary_restrictions": [
-          {
-            "key": "10665",
-            "name": "3BHK"
-          },
-          {
-            "key": "10697",
-            "name": "620 sqft"
-          },
-          {
-            "key": "10751",
-            "name": "1-3 people"
-          },
-          {
-            "key": "10992",
-            "name": "Gymniaium"
-          }
-        ]
-      },
-      {
-        "location_id": "2034920",
-        "name": "Dheeraj Chatani",
-        "latitude": "19.057643",
-        "longitude": "72.832249",
-        "timezone": "Asia/Kolkata",
-        "location_string": "Mumbai, Maharashtra",
-        "image": {
-          "url": "url"
-        },
-        "interested_users": [],
-        "distance": "4.008306106030764",
-        "distance_string": "4 km",
-        "price_level": "Rs. 22,000/- per month",
-        "rent": "Rs.1,500 - Rs.3,000",
-        "neighborhood_info": [
-          {
-            "location_id": "15621466",
-            "name": "Andheri East"
-          }
-        ],
-        "ride_providers": [
-          "olaCabs"
-        ],
-        "description": "Namak - the Indian Specialty restaurant exudes the contemporary food, super luxe ambience which takes the discerning taste buds on a delectable treat. With a menu reminiscent of the Royal Kitchens of India, the culinary delights on offer create magic with fragrant spices conjuring up a meal fit for a king.",
-        "phone": "+91 22 3980 7444",
-        "email": "info@saharastar.com",
-        "address_obj": {
-          "street1": "Hotel Sahara Star, Western Express Highway, Vile Parle East",
-          "street2": "Hotel Sahara Star",
-          "city": "Mumbai",
-          "state": "Maharashtra",
-          "country": "India",
-          "postalcode": "400057"
-        },
-        "address": "402, Krishna Kunj, S.V. Road, Bandra West",
-        "dietary_restrictions": [
-          {
-            "key": "10665",
-            "name": "1BHK"
-          },
-          {
-            "key": "10697",
-            "name": "520 sqft"
-          },
-          {
-            "key": "10751",
-            "name": "1-2 people"
-          },
-          {
-            "key": "10992",
-            "name": "Gymniaium"
-          }
-        ]
-      },
-      {
-        "location_id": "2034920",
-        "name": "Akhil Acharya",
-        "latitude": "19.006850",
-        "longitude": "72.824011",
-        "timezone": "Asia/Kolkata",
-        "location_string": "Mumbai, Maharashtra",
-        "image": {
-          "url": "url"
-        },
-        "interested_users": [],
-        "distance": "4.008306106030764",
-        "distance_string": "4 km",
-        "price_level": "Rs. 19,000/- per month",
-        "rent": "Rs.1,500 - Rs.3,000",
-        "neighborhood_info": [
-          {
-            "location_id": "15621466",
-            "name": "Andheri East"
-          }
-        ],
-        "ride_providers": [
-          "olaCabs"
-        ],
-        "description": "Namak - the Indian Specialty restaurant exudes the contemporary food, super luxe ambience which takes the discerning taste buds on a delectable treat. With a menu reminiscent of the Royal Kitchens of India, the culinary delights on offer create magic with fragrant spices conjuring up a meal fit for a king.",
-        "phone": "+91 22 3980 7444",
-        "email": "info@saharastar.com",
-        "address_obj": {
-          "street1": "Hotel Sahara Star, Western Express Highway, Vile Parle East",
-          "street2": "Hotel Sahara Star",
-          "city": "Mumbai",
-          "state": "Maharashtra",
-          "country": "India",
-          "postalcode": "400057"
-        },
-        "address": "3rd Floor, Kala Kunj, G.M. Bhosale Marg, Worli",
-        "dietary_restrictions": [
-          {
-            "key": "10665",
-            "name": "1BHK"
-          },
-          {
-            "key": "10697",
-            "name": "1250 SQFT"
-          },
-          {
-            "key": "10751",
-            "name": "1-3 people"
-          },
-          {
-            "key": "10992",
-            "name": "Parking"
-          }
-        ]
+        "location_id": "15621466",
+        "name": "Andheri East"
       }
-      
-  ]
+    ],
+    "ride_providers": ["olaCabs"],
+    "description": "Namak - the Indian Specialty restaurant exudes the contemporary food, super luxe ambience which takes the discerning taste buds on a delectable treat. With a menu reminiscent of the Royal Kitchens of India, the culinary delights on offer create magic with fragrant spices conjuring up a meal fit for a king.",
+    "phone": "+91 22 3980 7444",
+    "email": "info@saharastar.com",
+    "address_obj": {
+      "street1": "Hotel Sahara Star, Western Express Highway, Vile Parle East",
+      "street2": "Hotel Sahara Star",
+      "city": "Mumbai",
+      "state": "Maharashtra",
+      "country": "India",
+      "postalcode": "400057"
+    },
+    "address": "B/202, Ashirwad Complex, S.V. Road, Malad West",
+    "dietary_restrictions": [
+      {
+        "key": "10665",
+        "name": "2BHK"
+      },
+      {
+        "key": "10697",
+        "name": "1280 sqft"
+      },
+      {
+        "key": "10751",
+        "name": "2-4 people"
+      },
+      {
+        "key": "10992",
+        "name": ""
+      }
+    ]
+  },
+  {
+    "location_id": "2034920",
+    "name": "Viren Agicha",
+    "latitude": "19.063160",
+    "longitude": "72.832684",
+    "timezone": "Asia/Kolkata",
+    "location_string": "Mumbai, Maharashtra",
+    "image": {
+      "url": "https://res.cloudinary.com/techitcloud/image/upload/v1675359978/house-pic-2_qftect.jpg"
+    },
+    "interested_users": [],
+    "distance": "4.008306106030764",
+    "distance_string": "4 km",
+    "price_level": "Rs. 21,000/- per month",
+    "rent": "Rs.1,500 - Rs.3,000",
+    "neighborhood_info": [
+      {
+        "location_id": "15621466",
+        "name": "Andheri East"
+      }
+    ],
+    "ride_providers": ["olaCabs"],
+    "description": "Namak - the Indian Specialty restaurant exudes the contemporary food, super luxe ambience which takes the discerning taste buds on a delectable treat. With a menu reminiscent of the Royal Kitchens of India, the culinary delights on offer create magic with fragrant spices conjuring up a meal fit for a king.",
+    "phone": "+91 22 3980 7444",
+    "email": "info@saharastar.com",
+    "address_obj": {
+      "street1": "Hotel Sahara Star, Western Express Highway, Vile Parle East",
+      "street2": "Hotel Sahara Star",
+      "city": "Mumbai",
+      "state": "Maharashtra",
+      "country": "India",
+      "postalcode": "400057"
+    },
+    "address": "201, Balaji Niwas, Linking Road, Bandra West, Mumbai",
+    "dietary_restrictions": [
+      {
+        "key": "10665",
+        "name": "1BHK"
+      },
+      {
+        "key": "10697",
+        "name": "1180 sqft"
+      },
+      {
+        "key": "10751",
+        "name": "2-3 people"
+      },
+      {
+        "key": "10992",
+        "name": "Gymniaium"
+      }
+    ]
+  },
+  {
+    "location_id": "2034920",
+    "name": "Aditya Alisinghania",
+    "latitude": "19.104528",
+    "longitude": "72.850892",
+    "timezone": "Asia/Kolkata",
+    "location_string": "Mumbai, Maharashtra",
+    "image": {
+      "url": "https://res.cloudinary.com/techitcloud/image/upload/v1675360007/house-pic-3_svthtx.jpg"
+    },
+    "interested_users": [],
+    "distance": "4.008306106030764",
+    "distance_string": "4 km",
+    "price_level": "Rs. 19,500/- per month",
+    "rent": "Rs.1,500 - Rs.3,000",
+    "neighborhood_info": [
+      {
+        "location_id": "15621466",
+        "name": "Andheri East"
+      }
+    ],
+    "ride_providers": ["olaCabs"],
+    "description": "Namak - the Indian Specialty restaurant exudes the contemporary food, super luxe ambience which takes the discerning taste buds on a delectable treat. With a menu reminiscent of the Royal Kitchens of India, the culinary delights on offer create magic with fragrant spices conjuring up a meal fit for a king.",
+    "phone": "+91 22 3980 7444",
+    "email": "info@saharastar.com",
+    "address_obj": {
+      "street1": "Hotel Sahara Star, Western Express Highway, Vile Parle East",
+      "street2": "Hotel Sahara Star",
+      "city": "Mumbai",
+      "state": "Maharashtra",
+      "country": "India",
+      "postalcode": "400057"
+    },
+    "address": "1001, Sky Tower, New Link Road, Andheri West",
+    "dietary_restrictions": [
+      {
+        "key": "10665",
+        "name": "4BHK"
+      },
+      {
+        "key": "10697",
+        "name": "580 sqft"
+      },
+      {
+        "key": "10751",
+        "name": "2-3 people"
+      },
+      {
+        "key": "10992",
+        "name": "Gymniaium"
+      }
+    ]
+  },
+  {
+    "location_id": "2034920",
+    "name": "Amaan Ansari",
+    "latitude": "18.953816",
+    "longitude": "72.823392",
+    "timezone": "Asia/Kolkata",
+    "location_string": "Mumbai, Maharashtra",
+    "image": {
+      "url": "https://res.cloudinary.com/techitcloud/image/upload/v1675359825/house-pic_lnoukc.jpg"
+    },
+    "interested_users": [],
+    "distance": "4.008306106030764",
+    "distance_string": "4 km",
+    "price_level": "Rs. 18,500/- per month",
+    "rent": "Rs.1,500 - Rs.3,000",
+    "neighborhood_info": [
+      {
+        "location_id": "15621466",
+        "name": "Andheri East"
+      }
+    ],
+    "ride_providers": ["olaCabs"],
+    "description": "Namak - the Indian Specialty restaurant exudes the contemporary food, super luxe ambience which takes the discerning taste buds on a delectable treat. With a menu reminiscent of the Royal Kitchens of India, the culinary delights on offer create magic with fragrant spices conjuring up a meal fit for a king.",
+    "phone": "+91 22 3980 7444",
+    "email": "info@saharastar.com",
+    "address_obj": {
+      "street1": "Hotel Sahara Star, Western Express Highway, Vile Parle East",
+      "street2": "Hotel Sahara Star",
+      "city": "Mumbai",
+      "state": "Maharashtra",
+      "country": "India",
+      "postalcode": "400057"
+    },
+    "address": "Flat No. 504, Ocean View, Marine Drive, Mumbai",
+    "dietary_restrictions": [
+      {
+        "key": "10665",
+        "name": "2BHK"
+      },
+      {
+        "key": "10697",
+        "name": "570 sqft"
+      },
+      {
+        "key": "10751",
+        "name": "1-3 people"
+      },
+      {
+        "key": "10992",
+        "name": "Swimming Pool"
+      }
+    ]
+  },
+  {
+    "location_id": "2034920",
+    "name": "Rachit Arora",
+    "latitude": "19.115118",
+    "longitude": "72.833415",
+    "timezone": "Asia/Kolkata",
+    "location_string": "Mumbai, Maharashtra",
+    "image": {
+      "url": "https://res.cloudinary.com/techitcloud/image/upload/v1675359978/house-pic-2_qftect.jpg"
+    },
+    "interested_users": [],
+    "distance": "4.008306106030764",
+    "distance_string": "4 km",
+    "price_level": "Rs. 23,500/- per month",
+    "rent": "Rs.1,500 - Rs.3,000",
+    "neighborhood_info": [
+      {
+        "location_id": "15621466",
+        "name": "Andheri East"
+      }
+    ],
+    "ride_providers": ["olaCabs"],
+    "description": "Namak - the Indian Specialty restaurant exudes the contemporary food, super luxe ambience which takes the discerning taste buds on a delectable treat. With a menu reminiscent of the Royal Kitchens of India, the culinary delights on offer create magic with fragrant spices conjuring up a meal fit for a king.",
+    "phone": "+91 22 3980 7444",
+    "email": "info@saharastar.com",
+    "address_obj": {
+      "street1": "Hotel Sahara Star, Western Express Highway, Vile Parle East",
+      "street2": "Hotel Sahara Star",
+      "city": "Mumbai",
+      "state": "Maharashtra",
+      "country": "India",
+      "postalcode": "400057"
+    },
+    "address": "8th Floor, Asha Kiran, Juhu Tara Road, Mumbai",
+    "dietary_restrictions": [
+      {
+        "key": "10665",
+        "name": "1BHK"
+      },
+      {
+        "key": "10697",
+        "name": "820 sqft"
+      },
+      {
+        "key": "10751",
+        "name": "1 person"
+      },
+      {
+        "key": "10992",
+        "name": "Gymniaium"
+      }
+    ]
+  },
+  {
+    "location_id": "2034920",
+    "name": "Jay Aslaliya",
+    "latitude": "19.106961",
+    "longitude": "72.833841",
+    "timezone": "Asia/Kolkata",
+    "location_string": "Mumbai, Maharashtra",
+    "image": {
+      "url": "https://res.cloudinary.com/techitcloud/image/upload/v1675360007/house-pic-3_svthtx.jpg"
+    },
+    "interested_users": [],
+    "distance": "4.008306106030764",
+    "distance_string": "4 km",
+    "price_level": "Rs. 27,500/- per month",
+    "rent": "Rs.1,500 - Rs.3,000",
+    "neighborhood_info": [
+      {
+        "location_id": "15621466",
+        "name": "Andheri East"
+      }
+    ],
+    "ride_providers": ["olaCabs"],
+    "description": "Namak - the Indian Specialty restaurant exudes the contemporary food, super luxe ambience which takes the discerning taste buds on a delectable treat. With a menu reminiscent of the Royal Kitchens of India, the culinary delights on offer create magic with fragrant spices conjuring up a meal fit for a king.",
+    "phone": "+91 22 3980 7444",
+    "email": "info@saharastar.com",
+    "address_obj": {
+      "street1": "Hotel Sahara Star, Western Express Highway, Vile Parle East",
+      "street2": "Hotel Sahara Star",
+      "city": "Mumbai",
+      "state": "Maharashtra",
+      "country": "India",
+      "postalcode": "400057"
+    },
+    "address": "501, Jay Vijay, S.V. Road, Santacruz West.",
+    "dietary_restrictions": [
+      {
+        "key": "10665",
+        "name": "3BHK"
+      },
+      {
+        "key": "10697",
+        "name": "790 sqft"
+      },
+      {
+        "key": "10751",
+        "name": "1-3 people"
+      },
+      {
+        "key": "10992",
+        "name": "Swimming Pool"
+      }
+    ]
+  },
+  {
+    "location_id": "2034920",
+    "name": "Riya Bajaj",
+    "latitude": "19.021782",
+    "longitude": "72.848736",
+    "timezone": "Asia/Kolkata",
+    "location_string": "Mumbai, Maharashtra",
+    "image": {
+      "url": "https://res.cloudinary.com/techitcloud/image/upload/v1675359825/house-pic_lnoukc.jpg"
+    },
+    "interested_users": [],
+    "distance": "4.008306106030764",
+    "distance_string": "4 km",
+    "price_level": "Rs. 25,000/- per month",
+    "rent": "Rs.1,500 - Rs.3,000",
+    "neighborhood_info": [
+      {
+        "location_id": "15621466",
+        "name": "Andheri East"
+      }
+    ],
+    "ride_providers": ["olaCabs"],
+    "description": "Namak - the Indian Specialty restaurant exudes the contemporary food, super luxe ambience which takes the discerning taste buds on a delectable treat. With a menu reminiscent of the Royal Kitchens of India, the culinary delights on offer create magic with fragrant spices conjuring up a meal fit for a king.",
+    "phone": "+91 22 3980 7444",
+    "email": "info@saharastar.com",
+    "address_obj": {
+      "street1": "Hotel Sahara Star, Western Express Highway, Vile Parle East",
+      "street2": "Hotel Sahara Star",
+      "city": "Mumbai",
+      "state": "Maharashtra",
+      "country": "India",
+      "postalcode": "400057"
+    },
+    "address": "602, Swastik Tower, Sion Circle, Mumbai",
+    "dietary_restrictions": [
+      {
+        "key": "10665",
+        "name": "1BHK"
+      },
+      {
+        "key": "10697",
+        "name": "470 sqft"
+      },
+      {
+        "key": "10751",
+        "name": "1-4 people"
+      },
+      {
+        "key": "10992",
+        "name": "Gymniaium"
+      }
+    ]
+  },
+  {
+    "location_id": "2034920",
+    "name": "Shriya Bhat",
+    "latitude": "19.087657",
+    "longitude": "72.906757",
+    "timezone": "Asia/Kolkata",
+    "location_string": "Mumbai, Maharashtra",
+    "image": {
+      "url": "https://res.cloudinary.com/techitcloud/image/upload/v1675359978/house-pic-2_qftect.jpg"
+    },
+    "interested_users": [],
+    "distance": "4.008306106030764",
+    "distance_string": "4 km",
+    "price_level": "Rs. 23,000/- per month",
+    "rent": "Rs.1,500 - Rs.3,000",
+    "neighborhood_info": [
+      {
+        "location_id": "15621466",
+        "name": "Andheri East"
+      }
+    ],
+    "ride_providers": ["olaCabs"],
+    "description": "Namak - the Indian Specialty restaurant exudes the contemporary food, super luxe ambience which takes the discerning taste buds on a delectable treat. With a menu reminiscent of the Royal Kitchens of India, the culinary delights on offer create magic with fragrant spices conjuring up a meal fit for a king.",
+    "phone": "+91 22 3980 7444",
+    "email": "info@saharastar.com",
+    "address_obj": {
+      "street1": "Hotel Sahara Star, Western Express Highway, Vile Parle East",
+      "street2": "Hotel Sahara Star",
+      "city": "Mumbai",
+      "state": "Maharashtra",
+      "country": "India",
+      "postalcode": "400057"
+    },
+    "address": "9th Floor, Shree Laxmi Palace, L.B.S. Road, Ghatkopar West",
+    "dietary_restrictions": [
+      {
+        "key": "10665",
+        "name": "2BHK"
+      },
+      {
+        "key": "10697",
+        "name": "680 sqft"
+      },
+      {
+        "key": "10751",
+        "name": "1-4 people"
+      },
+      {
+        "key": "10992",
+        "name": "Gymniaium"
+      }
+    ]
+  },
+  {
+    "location_id": "2034920",
+    "name": "Leena Kamlesh",
+    "latitude": "19.120470",
+    "longitude": "72.851315",
+    "timezone": "Asia/Kolkata",
+    "location_string": "Mumbai, Maharashtra",
+    "image": {
+      "url": "https://res.cloudinary.com/techitcloud/image/upload/v1675360007/house-pic-3_svthtx.jpg"
+    },
+    "interested_users": [],
+    "distance": "4.008306106030764",
+    "distance_string": "4 km",
+    "price_level": "Rs. 33,000/- per month",
+    "rent": "Rs.1,500 - Rs.3,000",
+    "neighborhood_info": [
+      {
+        "location_id": "15621466",
+        "name": "Andheri East"
+      }
+    ],
+    "ride_providers": ["olaCabs"],
+    "description": "Namak - the Indian Specialty restaurant exudes the contemporary food, super luxe ambience which takes the discerning taste buds on a delectable treat. With a menu reminiscent of the Royal Kitchens of India, the culinary delights on offer create magic with fragrant spices conjuring up a meal fit for a king.",
+    "phone": "+91 22 3980 7444",
+    "email": "info@saharastar.com",
+    "address_obj": {
+      "street1": "Hotel Sahara Star, Western Express Highway, Vile Parle East",
+      "street2": "Hotel Sahara Star",
+      "city": "Mumbai",
+      "state": "Maharashtra",
+      "country": "India",
+      "postalcode": "400057"
+    },
+    "address": "3rd Floor, Sagar Shrusti, Andheri Kurla Road, Andheri East",
+    "dietary_restrictions": [
+      {
+        "key": "10665",
+        "name": "1BHK"
+      },
+      {
+        "key": "10697",
+        "name": "1360 sqft"
+      },
+      {
+        "key": "10751",
+        "name": "1-2 people"
+      },
+      {
+        "key": "10992",
+        "name": "Swimming Pool"
+      }
+    ]
+  },
+  {
+    "location_id": "2034920",
+    "name": "Manish Bhatia",
+    "latitude": "19.086569",
+    "longitude": "72.840064",
+    "timezone": "Asia/Kolkata",
+    "location_string": "Mumbai, Maharashtra",
+    "image": {
+      "url": "https://res.cloudinary.com/techitcloud/image/upload/v1675359825/house-pic_lnoukc.jpg"
+    },
+    "interested_users": [],
+    "distance": "4.008306106030764",
+    "distance_string": "4 km",
+    "price_level": "Rs. 30,000/- per month",
+    "rent": "Rs.1,500 - Rs.3,000",
+    "neighborhood_info": [
+      {
+        "location_id": "15621466",
+        "name": "Andheri East"
+      }
+    ],
+    "ride_providers": ["olaCabs"],
+    "description": "Namak - the Indian Specialty restaurant exudes the contemporary food, super luxe ambience which takes the discerning taste buds on a delectable treat. With a menu reminiscent of the Royal Kitchens of India, the culinary delights on offer create magic with fragrant spices conjuring up a meal fit for a king.",
+    "phone": "+91 22 3980 7444",
+    "email": "info@saharastar.com",
+    "address_obj": {
+      "street1": "Hotel Sahara Star, Western Express Highway, Vile Parle East",
+      "street2": "Hotel Sahara Star",
+      "city": "Mumbai",
+      "state": "Maharashtra",
+      "country": "India",
+      "postalcode": "400057"
+    },
+    "address": "201, Ambika Niwas, S.V. Road, Santacruz West",
+    "dietary_restrictions": [
+      {
+        "key": "10665",
+        "name": "1BHK"
+      },
+      {
+        "key": "10697",
+        "name": "1060 sqft"
+      },
+      {
+        "key": "10751",
+        "name": "2 people"
+      },
+      {
+        "key": "10992",
+        "name": "Gymniaium"
+      }
+    ]
+  },
+  {
+    "location_id": "2034920",
+    "name": "Piyush Bhatia",
+    "latitude": "19.016716",
+    "longitude": "72.833622",
+    "timezone": "Asia/Kolkata",
+    "location_string": "Mumbai, Maharashtra",
+    "image": {
+      "url": "https://res.cloudinary.com/techitcloud/image/upload/v1675359978/house-pic-2_qftect.jpg"
+    },
+    "interested_users": [],
+    "distance": "4.008306106030764",
+    "distance_string": "4 km",
+    "price_level": "Rs. 28,000/- per month",
+    "rent": "Rs.1,500 - Rs.3,000",
+    "neighborhood_info": [
+      {
+        "location_id": "15621466",
+        "name": "Andheri East"
+      }
+    ],
+    "ride_providers": ["olaCabs"],
+    "description": "Namak - the Indian Specialty restaurant exudes the contemporary food, super luxe ambience which takes the discerning taste buds on a delectable treat. With a menu reminiscent of the Royal Kitchens of India, the culinary delights on offer create magic with fragrant spices conjuring up a meal fit for a king.",
+    "phone": "+91 22 3980 7444",
+    "email": "info@saharastar.com",
+    "address_obj": {
+      "street1": "Hotel Sahara Star, Western Express Highway, Vile Parle East",
+      "street2": "Hotel Sahara Star",
+      "city": "Mumbai",
+      "state": "Maharashtra",
+      "country": "India",
+      "postalcode": "400057"
+    },
+    "address": "6th Floor, Udyog Bhavan, G.M. Bhosale Marg, Worli",
+    "dietary_restrictions": [
+      {
+        "key": "10665",
+        "name": "2BHK"
+      },
+      {
+        "key": "10697",
+        "name": "1330 sqft"
+      },
+      {
+        "key": "10751",
+        "name": "1-4 people"
+      },
+      {
+        "key": "10992",
+        "name": "Parking"
+      }
+    ]
+  },
+  {
+    "location_id": "2034920",
+    "name": "Omkar Bhosle",
+    "latitude": "19.183179",
+    "longitude": "72.841881",
+    "timezone": "Asia/Kolkata",
+    "location_string": "Mumbai, Maharashtra",
+    "image": {
+      "url": "https://res.cloudinary.com/techitcloud/image/upload/v1675360007/house-pic-3_svthtx.jpg"
+    },
+    "interested_users": [],
+    "distance": "4.008306106030764",
+    "distance_string": "4 km",
+    "price_level": "Rs. 24,500/- per month",
+    "rent": "Rs.1,500 - Rs.3,000",
+    "neighborhood_info": [
+      {
+        "location_id": "15621466",
+        "name": "Andheri East"
+      }
+    ],
+    "ride_providers": ["olaCabs"],
+    "description": "Namak - the Indian Specialty restaurant exudes the contemporary food, super luxe ambience which takes the discerning taste buds on a delectable treat. With a menu reminiscent of the Royal Kitchens of India, the culinary delights on offer create magic with fragrant spices conjuring up a meal fit for a king.",
+    "phone": "+91 22 3980 7444",
+    "email": "info@saharastar.com",
+    "address_obj": {
+      "street1": "Hotel Sahara Star, Western Express Highway, Vile Parle East",
+      "street2": "Hotel Sahara Star",
+      "city": "Mumbai",
+      "state": "Maharashtra",
+      "country": "India",
+      "postalcode": "400057"
+    },
+    "address": "204, Rajlaxmi Niwas, Link Road, Malad West",
+    "dietary_restrictions": [
+      {
+        "key": "10665",
+        "name": "2BHK"
+      },
+      {
+        "key": "10697",
+        "name": "390 sqft"
+      },
+      {
+        "key": "10751",
+        "name": "1-4 people"
+      },
+      {
+        "key": "10992",
+        "name": "Parking"
+      }
+    ]
+  },
+
+  {
+    "location_id": "2034920",
+    "name": "Dheeraj Chatani",
+    "latitude": "19.057643",
+    "longitude": "72.832249",
+    "timezone": "Asia/Kolkata",
+    "location_string": "Mumbai, Maharashtra",
+    "image": {
+      "url": "https://res.cloudinary.com/techitcloud/image/upload/v1675359978/house-pic-2_qftect.jpg"
+    },
+    "interested_users": [],
+    "distance": "4.008306106030764",
+    "distance_string": "4 km",
+    "price_level": "Rs. 22,000/- per month",
+    "rent": "Rs.1,500 - Rs.3,000",
+    "neighborhood_info": [
+      {
+        "location_id": "15621466",
+        "name": "Andheri East"
+      }
+    ],
+    "ride_providers": ["olaCabs"],
+    "description": "Namak - the Indian Specialty restaurant exudes the contemporary food, super luxe ambience which takes the discerning taste buds on a delectable treat. With a menu reminiscent of the Royal Kitchens of India, the culinary delights on offer create magic with fragrant spices conjuring up a meal fit for a king.",
+    "phone": "+91 22 3980 7444",
+    "email": "info@saharastar.com",
+    "address_obj": {
+      "street1": "Hotel Sahara Star, Western Express Highway, Vile Parle East",
+      "street2": "Hotel Sahara Star",
+      "city": "Mumbai",
+      "state": "Maharashtra",
+      "country": "India",
+      "postalcode": "400057"
+    },
+    "address": "402, Krishna Kunj, S.V. Road, Bandra West",
+    "dietary_restrictions": [
+      {
+        "key": "10665",
+        "name": "1BHK"
+      },
+      {
+        "key": "10697",
+        "name": "520 sqft"
+      },
+      {
+        "key": "10751",
+        "name": "1-2 people"
+      },
+      {
+        "key": "10992",
+        "name": "Gymniaium"
+      }
+    ]
+  },
+  {
+    "location_id": "2034920",
+    "name": "Mohit Chanchalani",
+    "latitude": "19.021619",
+    "longitude": "72.838090",
+    "timezone": "Asia/Kolkata",
+    "location_string": "Mumbai, Maharashtra",
+    "image": {
+      "url": "https://res.cloudinary.com/techitcloud/image/upload/v1675359825/house-pic_lnoukc.jpg"
+    },
+    "interested_users": [],
+    "distance": "4.008306106030764",
+    "distance_string": "4 km",
+    "price_level": "Rs. 20,500/- per month",
+    "rent": "Rs.1,500 - Rs.3,000",
+    "neighborhood_info": [
+      {
+        "location_id": "15621466",
+        "name": "Andheri East"
+      }
+    ],
+    "ride_providers": ["olaCabs"],
+    "description": "Namak - the Indian Specialty restaurant exudes the contemporary food, super luxe ambience which takes the discerning taste buds on a delectable treat. With a menu reminiscent of the Royal Kitchens of India, the culinary delights on offer create magic with fragrant spices conjuring up a meal fit for a king.",
+    "phone": "+91 22 3980 7444",
+    "email": "info@saharastar.com",
+    "address_obj": {
+      "street1": "Hotel Sahara Star, Western Express Highway, Vile Parle East",
+      "street2": "Hotel Sahara Star",
+      "city": "Mumbai",
+      "state": "Maharashtra",
+      "country": "India",
+      "postalcode": "400057"
+    },
+    "address": "7th Floor, Shanti Niwas, Dadar T.T., Mumbai",
+    "dietary_restrictions": [
+      {
+        "key": "10665",
+        "name": "3BHK"
+      },
+      {
+        "key": "10697",
+        "name": "620 sqft"
+      },
+      {
+        "key": "10751",
+        "name": "1-3 people"
+      },
+      {
+        "key": "10992",
+        "name": "Gymniaium"
+      }
+    ]
+  },
+  {
+    "location_id": "2034920",
+    "name": "Akhil Acharya",
+    "latitude": "19.006850",
+    "longitude": "72.824011",
+    "timezone": "Asia/Kolkata",
+    "location_string": "Mumbai, Maharashtra",
+    "image": {
+      "url": "https://res.cloudinary.com/techitcloud/image/upload/v1675360007/house-pic-3_svthtx.jpg"
+    },
+    "interested_users": [],
+    "distance": "4.008306106030764",
+    "distance_string": "4 km",
+    "price_level": "Rs. 19,000/- per month",
+    "rent": "Rs.1,500 - Rs.3,000",
+    "neighborhood_info": [
+      {
+        "location_id": "15621466",
+        "name": "Andheri East"
+      }
+    ],
+    "ride_providers": ["olaCabs"],
+    "description": "Namak - the Indian Specialty restaurant exudes the contemporary food, super luxe ambience which takes the discerning taste buds on a delectable treat. With a menu reminiscent of the Royal Kitchens of India, the culinary delights on offer create magic with fragrant spices conjuring up a meal fit for a king.",
+    "phone": "+91 22 3980 7444",
+    "email": "info@saharastar.com",
+    "address_obj": {
+      "street1": "Hotel Sahara Star, Western Express Highway, Vile Parle East",
+      "street2": "Hotel Sahara Star",
+      "city": "Mumbai",
+      "state": "Maharashtra",
+      "country": "India",
+      "postalcode": "400057"
+    },
+    "address": "3rd Floor, Kala Kunj, G.M. Bhosale Marg, Worli",
+    "dietary_restrictions": [
+      {
+        "key": "10665",
+        "name": "1BHK"
+      },
+      {
+        "key": "10697",
+        "name": "1250 SQFT"
+      },
+      {
+        "key": "10751",
+        "name": "1-3 people"
+      },
+      {
+        "key": "10992",
+        "name": "Parking"
+      }
+    ]
+  }
+]
