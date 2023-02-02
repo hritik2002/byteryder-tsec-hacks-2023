@@ -1,11 +1,22 @@
 const express = require("express");
 const router = express.Router();
 const jwt = require("jsonwebtoken");
+const fs = require("fs");
+const data = require("./data");
 
 const Customers = require("../models/Customers")
 
 const JWT_SECRET = "ROOMIIEEHOMMMIIEE";
 
+router.get("/housedetails", (req, res) => {
+    console.log("somtheong ");
+    return res.send({
+        "msg" : "Hellorrrrrr"
+    })
+})
+router.get("/getRoomsData", (req, res)=> {
+    res.send(data)
+})
 router.post("/createuser", async (req, res) => {
     let success = false;
     try{
@@ -40,7 +51,6 @@ router.post("/login", async (req, res) => {
     try{
         console.log(req.body);
         const user = await Customers.findOne({email : req.body.email});
-        console.log("useerr ... ",user)
         if(!user){
             return res.send({
                 msg : "E-mail is not registered",

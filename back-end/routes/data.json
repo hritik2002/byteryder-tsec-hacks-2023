@@ -1,0 +1,223 @@
+
+[
+    {
+        "location_id": "2034920",
+        "name": "Hritik Sharma",
+        "latitude": "19.095516",
+        "longitude": "72.85395",
+        "timezone": "Asia/Kolkata",
+        "location_string": "Mumbai, Maharashtra",
+        "image": {
+          "url": "url"
+        },
+        "interested_users": [],
+        "distance": "4.008306106030764",
+        "distance_string": "4 km",
+        "price_level": "$$$$",
+        "rent": "Rs.1,500 - Rs.3,000",
+        "neighborhood_info": [
+          {
+            "location_id": "15621466",
+            "name": "Vile Parle East"
+          }
+        ],
+        "ride_providers": [
+          "olaCabs"
+        ],
+        "description": "Namak - the Indian Specialty restaurant exudes the contemporary food, super luxe ambience which takes the discerning taste buds on a delectable treat. With a menu reminiscent of the Royal Kitchens of India, the culinary delights on offer create magic with fragrant spices conjuring up a meal fit for a king.",
+        "phone": "+91 22 3980 7444",
+        "email": "info@saharastar.com",
+        "address_obj": {
+          "street1": "Hotel Sahara Star, Western Express Highway, Vile Parle East",
+          "street2": "Hotel Sahara Star",
+          "city": "Mumbai",
+          "state": "Maharashtra",
+          "country": "India",
+          "postalcode": "400057"
+        },
+        "address": "Hotel Sahara Star, Western Express Highway, Vile Parle East Hotel Sahara Star, Mumbai 400057 India",
+        "dietary_restrictions": [
+          {
+            "key": "10665",
+            "name": "Vegetarian Friendly"
+          },
+          {
+            "key": "10697",
+            "name": "Vegan Options"
+          },
+          {
+            "key": "10751",
+            "name": "Halal"
+          },
+          {
+            "key": "10992",
+            "name": "Gluten Free Options"
+          }
+        ]
+      },
+      {
+        "location_id": "2034920",
+        "name": "Prajwal Dhule",
+        "latitude": "19.095716",
+        "longitude": "72.85385",
+        "timezone": "Asia/Kolkata",
+        "location_string": "Mumbai, Maharashtra",
+        "image": {
+          "url": "url"
+        },
+        "interested_users": [],
+        "distance": "4.008306106030764",
+        "distance_string": "4 km",
+        "price_level": "$$$$",
+        "rent": "Rs.1,500 - Rs.3,000",
+        "neighborhood_info": [
+          {
+            "location_id": "15621466",
+            "name": "Vile Parle East"
+          }
+        ],
+        "ride_providers": [
+          "olaCabs"
+        ],
+        "description": "Namak - the Indian Specialty restaurant exudes the contemporary food, super luxe ambience which takes the discerning taste buds on a delectable treat. With a menu reminiscent of the Royal Kitchens of India, the culinary delights on offer create magic with fragrant spices conjuring up a meal fit for a king.",
+        "phone": "+91 22 3980 7444",
+        "email": "info@saharastar.com",
+        "address_obj": {
+          "street1": "Queens Bldg., Western Express Highway, Khar Road East",
+          "street2": "SV Road",
+          "city": "Mumbai",
+          "state": "Maharashtra",
+          "country": "India",
+          "postalcode": "400057"
+        },
+        "address": "Hotel Sahara Star, Western Express Highway, Vile Parle East Hotel Sahara Star, Mumbai 400057 India",
+        "dietary_restrictions": [
+          {
+            "key": "10665",
+            "name": "Vegetarian Friendly"
+          },
+          {
+            "key": "10697",
+            "name": "Vegan Options"
+          },
+          {
+            "key": "10751",
+            "name": "Halal"
+          },
+          {
+            "key": "10992",
+            "name": "Gluten Free Options"
+          }
+        ]
+      },
+      {
+        "location_id": "2034920",
+        "name": "Rashid Aziz",
+        "latitude": "19.095712",
+        "longitude": "72.85388",
+        "timezone": "Asia/Kolkata",
+        "location_string": "Mumbai, Maharashtra",
+        "image": {
+          "url": "url"
+        },
+        "interested_users": [],
+        "distance": "4.008306106030764",
+        "distance_string": "4 km",
+        "price_level": "$$$$",
+        "rent": "Rs.1,500 - Rs.3,000",
+        "neighborhood_info": [
+          {
+            "location_id": "15621466",
+            "name": "Vile Parle East"
+          }
+        ],
+        "ride_providers": [
+          "olaCabs"
+        ],
+        "description": "Namak - the Indian Specialty restaurant exudes the contemporary food, super luxe ambience which takes the discerning taste buds on a delectable treat. With a menu reminiscent of the Royal Kitchens of India, the culinary delights on offer create magic with fragrant spices conjuring up a meal fit for a king.",
+        "phone": "+91 22 3980 7444",
+        "email": "info@saharastar.com",
+        "address_obj": {
+          "street1": "Queens Bldg., Western Express Highway, Khar Road East",
+          "street2": "SV Road",
+          "city": "Mumbai",
+          "state": "Maharashtra",
+          "country": "India",
+          "postalcode": "400057"
+        },
+        "address": "Hotel Sahara Star, Western Express Highway, Vile Parle East Hotel Sahara Star, Mumbai 400057 India",
+        "dietary_restrictions": [
+          {
+            "key": "10665",
+            "name": "Vegetarian Friendly"
+          },
+          {
+            "key": "10697",
+            "name": "Vegan Options"
+          },
+          {
+            "key": "10751",
+            "name": "Halal"
+          },
+          {
+            "key": "10992",
+            "name": "Gluten Free Options"
+          }
+        ]
+      },
+      {
+        "location_id": "2034920",
+        "name": "Sidhant Sharma",
+        "latitude": "19.095686",
+        "longitude": "72.85565",
+        "timezone": "Asia/Kolkata",
+        "location_string": "Mumbai, Maharashtra",
+        "image": {
+          "url": "url"
+        },
+        "interested_users": [],
+        "distance": "4.008306106030764",
+        "distance_string": "4 km",
+        "price_level": "$$$$",
+        "rent": "Rs.1,500 - Rs.3,000",
+        "neighborhood_info": [
+          {
+            "location_id": "15621466",
+            "name": "Vile Parle East"
+          }
+        ],
+        "ride_providers": [
+          "olaCabs"
+        ],
+        "description": "Namak - the Indian Specialty restaurant exudes the contemporary food, super luxe ambience which takes the discerning taste buds on a delectable treat. With a menu reminiscent of the Royal Kitchens of India, the culinary delights on offer create magic with fragrant spices conjuring up a meal fit for a king.",
+        "phone": "+91 22 3980 7444",
+        "email": "info@saharastar.com",
+        "address_obj": {
+          "street1": "Queens Bldg., Western Express Highway, Khar Road East",
+          "street2": "SV Road",
+          "city": "Mumbai",
+          "state": "Maharashtra",
+          "country": "India",
+          "postalcode": "400057"
+        },
+        "address": "Hotel Sahara Star, Western Express Highway, Vile Parle East Hotel Sahara Star, Mumbai 400057 India",
+        "dietary_restrictions": [
+          {
+            "key": "10665",
+            "name": "Vegetarian Friendly"
+          },
+          {
+            "key": "10697",
+            "name": "Vegan Options"
+          },
+          {
+            "key": "10751",
+            "name": "Halal"
+          },
+          {
+            "key": "10992",
+            "name": "Gluten Free Options"
+          }
+        ]
+      }
+  ]
