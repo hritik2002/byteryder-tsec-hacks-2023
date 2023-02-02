@@ -7,6 +7,10 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    const details = {
+      name: "",
+    };
     // Add your submit logic here
   };
 
