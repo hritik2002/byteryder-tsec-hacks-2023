@@ -1,8 +1,8 @@
 import React from "react";
 
-const RoomCard = ({ roomDetail }) => {
+const UserCard = ({ roomDetail }) => {
   const toggleInterest = () => {
-    // send roomDetail along with user authToken to the api
+    // send userDetail along with user authToken to the api
   };
 
   return (
@@ -72,4 +72,4 @@ const RoomCard = ({ roomDetail }) => {
   );
 };
 
-export default RoomCard;
+export default UserCard;
