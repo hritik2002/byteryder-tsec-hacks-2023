@@ -25,7 +25,7 @@ const HomePage = () => {
   }, []);
 
   return (
-    <div className="home-body">
+    <div className="home-body relative">
       <Navbar />
       <div className="relative opacity-0 hero-wrapper box-border overflow-x-hidden flex justify-between min-w-[100vw] min-h-[100vh] items-center sm:px-[5vw]">
         <div className="w-3/5">
