@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { LoginUserFn } from "./api/index";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -9,8 +10,13 @@ const Login = () => {
     e.preventDefault();
 
     const details = {
-      name: "",
+      email,
+      password,
     };
+
+    const valid = LoginUserFn(details);
+    console.log(valid, "fasdljfasljfasldjfadsl")
+
     // Add your submit logic here
   };
 
