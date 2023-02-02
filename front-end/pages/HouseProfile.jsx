@@ -1,62 +1,23 @@
 import React from "react";
 import Navbar from "@/ui/Navbar";
-
-const houseDetail = {
-  location_id: "2034920",
-  name: "Amaan Ansari",
-  latitude: "18.953816",
-  longitude: "72.823392",
-  timezone: "Asia/Kolkata",
-  location_string: "Mumbai, Maharashtra",
-  image: {
-    url: "url",
-  },
-  interested_users: [],
-  distance: "4.008306106030764",
-  distance_string: "4 km",
-  price_level: "Rs. 18,500/- per month",
-  rent: "Rs.1,500 - Rs.3,000",
-  neighborhood_info: [
-    {
-      location_id: "15621466",
-      name: "Andheri East",
-    },
-  ],
-  ride_providers: ["olaCabs"],
-  description:
-    "Namak - the Indian Specialty restaurant exudes the contemporary food, super luxe ambience which takes the discerning taste buds on a delectable treat. With a menu reminiscent of the Royal Kitchens of India, the culinary delights on offer create magic with fragrant spices conjuring up a meal fit for a king.",
-  phone: "+91 22 3980 7444",
-  email: "info@saharastar.com",
-  address_obj: {
-    street1: "Hotel Sahara Star, Western Express Highway, Vile Parle East",
-    street2: "Hotel Sahara Star",
-    city: "Mumbai",
-    state: "Maharashtra",
-    country: "India",
-    postalcode: "400057",
-  },
-  address: "Flat No. 504, Ocean View, Marine Drive, Mumbai",
-  dietary_restrictions: [
-    {
-      key: "10665",
-      name: "2BHK",
-    },
-    {
-      key: "10697",
-      name: "570 sqft",
-    },
-    {
-      key: "10751",
-      "Capacity of people": "1-3 people",
-    },
-    {
-      key: "10992",
-      name: "Swimming Pool",
-    },
-  ],
-};
+import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
+import { getOneHouseDetailFn } from "./api";
 
 const HouseProfile = () => {
+  const router = useRouter();
+  const { id } = router.query;
+  const [houseDetail, setHouseDetail] = useState({});
+
+  const fetchHouseDetail = async () => {
+    let data = await getOneHouseDetailFn({ id });
+    if (data) setHouseDetail(data);
+  };
+
+  useEffect(() => {
+    fetchHouseDetail();
+  }, []);
+
   return (
     <div className="house-profile-body">
       <Navbar />
@@ -104,13 +65,13 @@ const HouseProfile = () => {
                     <div class="flex justify-center py-4 lg:pt-4 pt-8">
                       <div class="mr-4 p-3 text-center">
                         <span class="text-xl font-bold block uppercase tracking-wide text-blueGray-600">
-                          {houseDetail.address_obj.state}
+                          {houseDetail?.address_obj?.state}
                         </span>
                         <span class="text-sm text-blueGray-400">State</span>
                       </div>
                       <div class="mr-4 p-3 text-center">
                         <span class="text-xl font-bold block capitalize tracking-wide text-blueGray-600">
-                          {houseDetail.address_obj.city}
+                          {houseDetail?.address_obj?.city}
                         </span>
                         <span class="text-sm text-blueGray-400">City</span>
                       </div>
@@ -120,7 +81,7 @@ const HouseProfile = () => {
                     <div class="flex justify-center py-4 lg:pt-4 pt-8">
                       <div class="lg:mr-4 p-3 text-center">
                         <span class="text-xl font-bold block capitalize tracking-wide text-blueGray-600">
-                          {houseDetail.address_obj.postalcode}
+                          {houseDetail?.address_obj?.postalcode}
                         </span>
                         <span class="text-sm text-blueGray-400">Pincode</span>
                       </div>
@@ -152,27 +113,17 @@ const HouseProfile = () => {
                   </h3>
                   <div class="text-sm leading-normal mt-0 mb-2 text-blueGray-400 font-bold uppercase">
                     <i class="fas fa-map-marker-alt mr-2 text-lg text-blueGray-400"></i>
-                    Near Thadomal Shahani Engineering College, Bandra West,
-                    Mumbai
+                    {houseDetail?.address}
                   </div>
                   <ul className="list-disc w-fit mx-auto">
                     <li class="mb-2 text-blueGray-600 mt-10 text-left">
                       {/* <i class="fas fa-briefcase mr-2 text-lg text-blueGray-400"></i> */}
-                      <b>12</b> People are currently interested in renting this
-                      room
+                      <b>{houseDetail?.interested_users?.length}</b> People are
+                      currently interested in renting this room
                     </li>
                     <li class="mb-2 text-blueGray-600 text-left">
                       {/* <i class="fas fa-university mr-2 text-lg text-blueGray-400"></i> */}
-                      Safety Rating: <b>8.9</b>
-                    </li>
-                    <li class="mb-2 text-blueGray-600 text-left">
-                      {/* <i class="fas fa-university mr-2 text-lg text-blueGray-400"></i> */}
-                      Looking for rooms and currently interested in <b>10</b>{" "}
-                      places
-                    </li>
-                    <li class="mb-2 text-blueGray-600 text-left">
-                      {/* <i class="fas fa-university mr-2 text-lg text-blueGray-400"></i> */}
-                      Eats <b className="text-green-600">Veg</b> food
+                      Safety Rating: <b>{houseDetail?.safety_rating}</b>
                     </li>
                   </ul>
                 </div>
@@ -180,14 +131,13 @@ const HouseProfile = () => {
                   <div class="flex flex-wrap justify-center">
                     <div class="w-full lg:w-9/12 px-4">
                       <p class="mb-4 text-lg leading-relaxed text-blueGray-700">
-                        Nearby Food places: Hotel1, Restaurant nine, ravi rice,
-                        KFC.
+                        {houseDetail?.nearbyfoodplaces}
                       </p>
                       <p class="mb-4 text-lg leading-relaxed text-blueGray-700">
-                        Nearby Shops: Organic Grocery Market, TSEC Mall.
+                        {houseDetail?.nearbyshops}
                       </p>
                       <p class="mb-4 text-lg leading-relaxed text-blueGray-700">
-                        Landmarks: Candies, National College
+                        {houseDetail?.landmark}
                       </p>
                       {/* <a href="#pablo" class="font-normal text-pink-500">
                         Show more

@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { LoginUserFn } from "./api/index";
+import { useRouter } from "next/router";
 
 const Login = () => {
+  const Router = useRouter();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -14,6 +16,13 @@ const Login = () => {
     };
 
     const valid = await LoginUserFn(details);
+
+    if (valid.data.success) {
+      localStorage.setItem("Token", valid.data.authToken);
+      Router.push("/HomePage");
+    } else {
+      alert("Enter valid data");
+    }
   };
 
   return (
@@ -24,10 +33,7 @@ const Login = () => {
       <h1 className="text-[2em] font-semibold mt-[0.5em] mb-[1em]">
         Login to your account
       </h1>
-      <form
-        className="bg-[#FEF3D3] p-6 mb-[2em] rounded-lg shadow-md w-[25vw]"
-        onSubmit={handleSubmit}
-      >
+      <form className="bg-[#FEF3D3] p-6 mb-[2em] rounded-lg shadow-md w-[25vw]">
         <div className="mb-4">
           <label
             className="block text-gray-700 font-medium mb-2"
@@ -61,7 +67,7 @@ const Login = () => {
         <div className="btn-wrapper flex justify-between">
           <button
             className="bg-green-700 hover:bg-[#f7ca48] text-white font-medium py-2 px-4 my-4 rounded w-full"
-            type="submit"
+            onClick={handleSubmit}
           >
             Login
           </button>

@@ -15,6 +15,21 @@ router.get("/intrested", auth, (req, res) => {
     src: "fool",
   });
 });
+
+// console.log(data[0]);
+router.post("/getonehouse", (req, res) => {
+  for (let i = 0; i < data.length; i++) {
+    if (data[i].location_id === req.body.id) {
+      let finaldata = data[i];
+      return res.send({
+        finaldata,
+      });
+    }
+  }
+
+  res.send([]);
+});
+
 router.put("/addUserData", auth, async (req, res) => {
   console.log("inside");
   try {
