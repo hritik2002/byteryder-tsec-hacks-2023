@@ -3,15 +3,49 @@ const router = express.Router();
 const jwt = require("jsonwebtoken");
 const fs = require("fs");
 const data = require("./data");
+const auth = require("../utils/middleware")
 
 const Customers = require("../models/Customers")
 
-const JWT_SECRET = "ROOMIIEEHOMMMIIEE";
+const JWT_SECRET = "HelloRashid"
 
-router.get("/housedetails", (req, res) => {
-    console.log("somtheong ");
-    return res.send({
-        "msg" : "Hellorrrrrr"
+router.get("/intrested", auth, (req, res) => {
+    console.log(req.user);
+    res.send({
+        src : "fool"
+    })
+})
+router.put("/addUserData", auth, async (req, res) => {
+    console.log("inside");
+    try{
+        let user = await Customers.findById(req.user.id);
+        // console.log(req.body)
+        const update = { 
+            name : req.body.name,
+            smoking : req.body.smoking,
+            drinking : req.body.drinking,
+            status : req.body.status,
+            dob : req.body.dob,
+            contact_no : req.body.contact_no,
+            health_desc : req.body.health_desc,
+            message : req.body.message,
+        };
+        const newuser = await Customers.findOneAndUpdate({id : req.user.id}, update);
+        res.send({
+            msg : "User Updated",
+            newuser
+        })
+    } catch(e){
+        console.log(e);
+        res.send({
+            err : "Some error occured"
+        })
+    }
+})
+router.get("/getUser", auth, async (req, res) => {
+    const user = await Customers.findById(req.user.id);
+    res.send({
+        user
     })
 })
 router.get("/getRoomsData", (req, res)=> {
@@ -49,7 +83,6 @@ router.post("/createuser", async (req, res) => {
 router.post("/login", async (req, res) => {
     let success = false;
     try{
-        console.log(req.body);
         const user = await Customers.findOne({email : req.body.email});
         if(!user){
             return res.send({
