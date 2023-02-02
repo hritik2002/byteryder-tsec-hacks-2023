@@ -2,16 +2,65 @@ import React, { useState } from "react";
 import Navbar from "@/ui/Navbar";
 import RoomCard from "@/ui/RoomCard";
 import { getPlacesData } from "./api";
+import { locationArr } from "@/lib/location";
+import { useEffect } from "react";
 
 function FindMatch() {
   const [isRooms, setIsRooms] = useState(true);
   const [searchLocation, setSearchLocation] = useState("");
   const [roomData, setRoomData] = useState([]);
+  const [filteredData, setFilteredData] = useState([]);
+  const [wordEntered, setWordEntered] = useState("");
+  const [totalRooms, setTotalRooms] = useState([]);
+
+  const handleClick = (loc) => {
+    setSearchLocation(loc);
+    setWordEntered(loc);
+    setFilteredData([]);
+  };
+
+  useEffect(() => {
+    console.log("a;slfjasld");
+    if (wordEntered.length == 0) {
+      setRoomData(totalRooms);
+    }
+  }, [wordEntered]);
+
+  const getLocationBasedOnSearch = (e) => {
+    e.preventDefault();
+    const roomArray = roomData.filter((value) => {
+      console.log(
+        value.address.includes(wordEntered),
+        "value.address.includes(wordEntered)"
+      );
+      return value.address.includes(wordEntered);
+    });
+    console.log(roomArray, "roomArray");
+    setRoomData(roomArray);
+  };
+
+  const handleFilter = (event) => {
+    const searchWord = event.target.value;
+    console.log(searchWord, locationArr, "searchWord");
+
+    setWordEntered(searchWord);
+    const newFilter = locationArr.filter((value) => {
+      return value.label?.toLowerCase().includes(searchWord.toLowerCase());
+    });
+
+    console.log(newFilter);
+    if (searchWord === "") {
+      setFilteredData([]);
+    } else {
+      setFilteredData(newFilter);
+    }
+  };
 
   const getAllPlacesFn = async () => {
     const data = await getPlacesData();
     console.log(data);
     setRoomData(data);
+    setTotalRooms(data);
   };
 
   React.useEffect(() => {
@@ -29,7 +78,7 @@ function FindMatch() {
         </div>
       </div> */}
       <div className="find-match-wrapper mt-[20vh] px-[5vw]">
-        <form class="flex items-center justify-center w-full">
+        <form class="flex items-center justify-center w-full relative">
           <label for="voice-search" class="sr-only">
             Search
           </label>
@@ -55,6 +104,8 @@ function FindMatch() {
               class="bg-gray-50 border border-gray-300 text-gray-900 text-md rounded-lg block w-full py-5 px-[4em] dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-blue-500"
               placeholder="Search Mockups, Logos, Design Templates..."
               required
+              onChange={handleFilter}
+              value={wordEntered}
             />
             <button
               type="button"
@@ -75,8 +126,25 @@ function FindMatch() {
               </svg>
             </button>
           </div>
+          {filteredData.length != 0 && (
+            <div className="dataResult absolute left-[60px] top-[80px] bg-white w-1/2 z-10 border-2 border-solid gray-600-black pl-[1em] rounded py-[1em]">
+              {filteredData.slice(0, 15).map((value) => {
+                return (
+                  <p
+                    className="dataItem hover:text-blue-700 hover:bg-gray-100 w-full cursor-pointer py-[3px]"
+                    value={value.label}
+                    onClick={() => handleClick(value.label)}
+                    target="_blank"
+                  >
+                    <p>{value.label} </p>
+                  </p>
+                );
+              })}
+            </div>
+          )}
           <button
-            type="submit"
+            // type="submit"
+            onClick={getLocationBasedOnSearch}
             class="w-auto inline-flex items-center justify-center px-[2em] py-[1.25em] ml-2 text-md font-medium text-white bg-blue-700 rounded-lg border border-blue-700 hover:bg-blue-800 focus:outline-none dark:bg-blue-600 dark:hover:bg-blue-700 "
           >
             <svg

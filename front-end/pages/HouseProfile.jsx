@@ -1,6 +1,61 @@
 import React from "react";
 import Navbar from "@/ui/Navbar";
 
+const houseDetail = {
+  location_id: "2034920",
+  name: "Amaan Ansari",
+  latitude: "18.953816",
+  longitude: "72.823392",
+  timezone: "Asia/Kolkata",
+  location_string: "Mumbai, Maharashtra",
+  image: {
+    url: "url",
+  },
+  interested_users: [],
+  distance: "4.008306106030764",
+  distance_string: "4 km",
+  price_level: "Rs. 18,500/- per month",
+  rent: "Rs.1,500 - Rs.3,000",
+  neighborhood_info: [
+    {
+      location_id: "15621466",
+      name: "Andheri East",
+    },
+  ],
+  ride_providers: ["olaCabs"],
+  description:
+    "Namak - the Indian Specialty restaurant exudes the contemporary food, super luxe ambience which takes the discerning taste buds on a delectable treat. With a menu reminiscent of the Royal Kitchens of India, the culinary delights on offer create magic with fragrant spices conjuring up a meal fit for a king.",
+  phone: "+91 22 3980 7444",
+  email: "info@saharastar.com",
+  address_obj: {
+    street1: "Hotel Sahara Star, Western Express Highway, Vile Parle East",
+    street2: "Hotel Sahara Star",
+    city: "Mumbai",
+    state: "Maharashtra",
+    country: "India",
+    postalcode: "400057",
+  },
+  address: "Flat No. 504, Ocean View, Marine Drive, Mumbai",
+  dietary_restrictions: [
+    {
+      key: "10665",
+      name: "2BHK",
+    },
+    {
+      key: "10697",
+      name: "570 sqft",
+    },
+    {
+      key: "10751",
+      "Capacity of people": "1-3 people",
+    },
+    {
+      key: "10992",
+      name: "Swimming Pool",
+    },
+  ],
+};
+
 const HouseProfile = () => {
   return (
     <div className="house-profile-body">
@@ -49,13 +104,13 @@ const HouseProfile = () => {
                     <div class="flex justify-center py-4 lg:pt-4 pt-8">
                       <div class="mr-4 p-3 text-center">
                         <span class="text-xl font-bold block uppercase tracking-wide text-blueGray-600">
-                          Maharashtra
+                          {houseDetail.address_obj.state}
                         </span>
                         <span class="text-sm text-blueGray-400">State</span>
                       </div>
                       <div class="mr-4 p-3 text-center">
                         <span class="text-xl font-bold block capitalize tracking-wide text-blueGray-600">
-                          Mumbai
+                          {houseDetail.address_obj.city}
                         </span>
                         <span class="text-sm text-blueGray-400">City</span>
                       </div>
@@ -65,7 +120,7 @@ const HouseProfile = () => {
                     <div class="flex justify-center py-4 lg:pt-4 pt-8">
                       <div class="lg:mr-4 p-3 text-center">
                         <span class="text-xl font-bold block capitalize tracking-wide text-blueGray-600">
-                          400051
+                          {houseDetail.address_obj.postalcode}
                         </span>
                         <span class="text-sm text-blueGray-400">Pincode</span>
                       </div>
