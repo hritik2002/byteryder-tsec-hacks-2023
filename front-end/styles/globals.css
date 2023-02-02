@@ -36,6 +36,37 @@ a {
   text-decoration: none;
 }
 
+.background {
+  background-image: url("https://images.unsplash.com/photo-1499336315816-097655dcfbda?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=2710&amp;q=80");
+  opacity: 0.5;
+  /* background-color: rgb(255, 206, 60); */
+}
+
+.svg-wrapper {
+  transform: translateZ(0px);
+}
+
+.profile-pic {
+  height: 300px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-image: url("../public/profile-pic-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.house-pic {
+  height: 320px;
+  aspect-ratio: 1.25;
+  /* border-radius: 50%; */
+  background-image: url("../public/house1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.profile-pic-wrapper {
+  transform: translateY(-50%);
+}
+
 ::-webkit-scrollbar {
   width: 8px;
   height: 0;
