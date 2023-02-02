@@ -38,29 +38,102 @@ export default function Home() {
         <div className="relative opacity-0 hero-wrapper box-border overflow-x-hidden flex justify-between min-w-[100vw] min-h-[100vh] items-center sm:px-[5vw]">
           <div className="w-3/5">
             <h1 className="text-5xl font-bold pb-6">
-              Find the perfect roommates in the place
+              Find the perfect room mates in the best places
             </h1>
             <p className="pb-6 w-4/5">
               is simply dummy text of the printing and typesetting industry.
               Lorem Ipsum has been the industry's standard dummy text
             </p>
             <div className="btn-wrapper w-full flex justify-left pt-[2em]">
-              <button className="cursor-pointer py-[1em] px-[2.5em] rounded bg-[#FEF3D3] shadow-2xl font-medium hover:bg-[#FFE395]">
-                Find rooms
+              <button className="cursor-pointer py-[1em] px-[2.5em] rounded bg-[#FEF3A1] shadow-2xl font-medium hover:bg-[#FFE395]">
+                Find rooms/roommates
               </button>
-              <button className="ml-[4em] cursor-pointer py-[1em] px-[2.5em] rounded bg-[#FEF3D3] shadow-2xl font-medium hover:bg-[#FFE395]">
+              {/* <button className="ml-[4em] cursor-pointer py-[1em] px-[2.5em] rounded bg-[#FEF3D3] shadow-2xl font-medium hover:bg-[#FFE395]">
                 Find room mates
-              </button>
+              </button> */}
             </div>
           </div>
-          <div className="img-wrapper absolute right-[5vw] w-[36%] translate-y-[20vh]">
+          {/* translate-y-[20vh] */}
+          <div className="img-wrapper absolute right-[5vw] w-[36%] mt-[10vh] ">
             <img
               className="w-11/12"
-              src="/hero-img-2.png"
+              src="/hero-img-3.png"
               alt="house and roommate image"
             ></img>
           </div>
         </div>
+        <section className="mt-[3em] px-[5vw] pb-[10vh]">
+          <h2 className="text-4xl font-medium">What we provide . . .</h2>
+
+          <div className="services-wrapper flex justify-between">
+            <div className="card mt-[25vh] max-w-[25vw] bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+              <div className="flex flex-col items-center pb-10 relative">
+                <div className="h-[27.5vh] w-[27.5vh] absolute top-[-50%] translate-y-[50%]">
+                  <img src="/service-2.png" alt="service-1" />
+                </div>
+                <h4 className="mb-1 mt-[2.5em] text-2xl font-semibold text-gray-900 dark:text-white">
+                  Find Rooms
+                </h4>
+                <span className="text-sm text-gray-500 dark:text-gray-400 px-[3em] mt-[1em]">
+                  Find rooms that best suite your needs and comfort at the palm
+                  of your hand
+                </span>
+                <div className="flex mt-4 space-x-3 md:mt-6">
+                  <a
+                    href="#"
+                    className="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-md hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                  >
+                    Explore
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="card mt-[25vh] max-w-[25vw] bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+              <div className="flex flex-col items-center pb-10 relative">
+                <div className="h-[22.5vh] w-[22.5vh] absolute top-[-50%] translate-y-[50%]">
+                  <img src="/service-1.png" alt="service-1" />
+                </div>
+                <h4 className="mb-1 mt-[2.5em] text-2xl font-semibold text-gray-900 dark:text-white">
+                  Find Roommates
+                </h4>
+                <span className="text-sm text-gray-500 dark:text-gray-400 px-[3em] mt-[1em]">
+                  Easily find the roommate that best matches with your interests
+                  in any locality of choice
+                </span>
+                <div className="flex mt-4 space-x-3 md:mt-6">
+                  <a
+                    href="#"
+                    className="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-md hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                  >
+                    Explore
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="card mt-[25vh] max-w-[25vw]  bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+              <div className="flex flex-col items-center pb-10 relative">
+                <div className="h-[27.5vh] w-[27.5vh] absolute top-[-50%] translate-y-[30%]">
+                  <img src="/service-3.png" alt="service-1" />
+                </div>
+                <h4 className="mb-1 mt-[2.5em] text-2xl font-semibold text-gray-900 dark:text-white">
+                  An ideal combination
+                </h4>
+                <span className="text-sm text-gray-500 dark:text-gray-400 px-[3em] mt-[1em]">
+                  Use various filters and narrow it down to the best combination
+                  of rooms and room mates
+                </span>
+                <div className="flex mt-4 space-x-3 md:mt-6">
+                  <a
+                    href="#"
+                    className="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-md hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                  >
+                    Explore
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </AppProvider>
   );

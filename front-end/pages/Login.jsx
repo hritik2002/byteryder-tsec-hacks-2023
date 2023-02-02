@@ -18,7 +18,9 @@ const Login = () => {
 
   return (
     <div className="flex flex-col justify-center items-center h-screen">
-      <h2 className="text-[2.5em] font-bold">Roomie</h2>
+      <a href="/">
+        <img src="/logo-3.png" alt="Roomie logo" className="h-[4.5em]" />
+      </a>
       <h1 className="text-[2em] font-semibold mt-[0.5em] mb-[1em]">
         Login to your account
       </h1>

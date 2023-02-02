@@ -30,7 +30,7 @@ const HomePage = () => {
       <div className="relative opacity-0 hero-wrapper box-border overflow-x-hidden flex justify-between min-w-[100vw] min-h-[100vh] items-center sm:px-[5vw]">
         <div className="w-3/5">
           <h1 className="text-5xl font-bold pb-6">
-            Find the perfect roommates in the place
+            Find the perfect roommates in the desired places
           </h1>
           <p className="pb-6 w-4/5">
             is simply dummy text of the printing and typesetting industry. Lorem

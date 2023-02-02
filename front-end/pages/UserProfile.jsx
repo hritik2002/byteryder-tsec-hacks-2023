@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "@/ui/Navbar";
+import InterestedHouses from "@/ui/InterestedHouses";
 
 const UserProfile = () => {
   return (
@@ -31,7 +32,7 @@ const UserProfile = () => {
           </div>
         </section>
         <section className="relative py-16 bg-blueGray-200">
-          <div className="container mx-auto px-4">
+          <div className="container mx-auto px-[5vw]">
             <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-1 shadow-xl rounded-lg -mt-64">
               <div className="px-6">
                 <div className="flex flex-wrap justify-center h-fit mb-[-6em]">
@@ -161,6 +162,24 @@ const UserProfile = () => {
           </footer> */}
         </section>
       </main>
+      <div className="interested-header flex justify-between items-center mb-[2.5em] mx-[5vw] ">
+        <h4 className="text-3xl font-medium  ">Interested Rooms:</h4>
+        <svg
+          width="601"
+          height="193"
+          viewBox="0 0 601 193"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          className="h-[2em] w-[5em]"
+        >
+          <path
+            d="M596.203 105.714C601.28 100.637 601.28 92.4055 596.203 87.3287L513.472 4.59724C508.395 -0.479579 500.164 -0.479579 495.087 4.59724C490.01 9.67405 490.01 17.9052 495.087 22.982L568.626 96.5211L495.087 170.06C490.01 175.137 490.01 183.368 495.087 188.445C500.164 193.522 508.395 193.522 513.472 188.445L596.203 105.714ZM0.633911 109.521H587.011V83.5211H0.633911V109.521Z"
+            fill="black"
+          />
+        </svg>
+      </div>
+
+      <InterestedHouses />
     </div>
   );
 };

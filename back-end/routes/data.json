@@ -2,10 +2,10 @@
   {
     "location_id": "2034921",
     "name": "Prem Acharya",
-    "latitude": "19.101932",
-    "longitude": "72.853125",
+    "latitude": "12.927923",
+    "longitude": "77.627106",
     "timezone": "Asia/Kolkata",
-    "location_string": "Mumbai, Maharashtra",
+    "location_string": "Koramangala, Bng",
     "image": {
       "url": "https://res.cloudinary.com/techitcloud/image/upload/v1675359825/house-pic_lnoukc.jpg"
     },
@@ -17,7 +17,7 @@
     "neighborhood_info": [
       {
         "location_id": "15621466",
-        "name": "Andheri East"
+        "name": "Koramangala East"
       }
     ],
     "ride_providers": ["olaCabs"],
@@ -25,14 +25,14 @@
     "phone": "+91 22 3980 7444",
     "email": "info@saharastar.com",
     "address_obj": {
-      "street1": "Hotel Sahara Star, Western Express Highway, Vile Parle East",
+      "street1": "Hotel Sahara Star, Western Express Highway, Koramangala East",
       "street2": "Hotel Sahara Star",
-      "city": "Mumbai",
-      "state": "Maharashtra",
+      "city": "Koramangala",
+      "state": "Bangalore",
       "country": "India",
-      "postalcode": "400057"
+      "postalcode": "560034"
     },
-    "address": "B/202, Ashirwad Complex, S.V. Road, Malad West",
+    "address": "C/106, Ashirwad Complex, V.K. Road, Koramangala, Bangalore",
     "dietary_restrictions": [
       {
         "key": "10665",
@@ -55,10 +55,10 @@
   {
     "location_id": "2034922",
     "name": "Viren Agicha",
-    "latitude": "19.063160",
-    "longitude": "72.832684",
+    "latitude": "25.519329",
+    "longitude": "77.421806",
     "timezone": "Asia/Kolkata",
-    "location_string": "Mumbai, Maharashtra",
+    "location_string": "Jayanagar, Bng",
     "image": {
       "url": "https://res.cloudinary.com/techitcloud/image/upload/v1675359978/house-pic-2_qftect.jpg"
     },
@@ -70,7 +70,7 @@
     "neighborhood_info": [
       {
         "location_id": "15621466",
-        "name": "Andheri East"
+        "name": "Jayanagar East"
       }
     ],
     "ride_providers": ["olaCabs"],
@@ -78,14 +78,14 @@
     "phone": "+91 22 3980 7444",
     "email": "info@saharastar.com",
     "address_obj": {
-      "street1": "Hotel Sahara Star, Western Express Highway, Vile Parle East",
+      "street1": "Hotel Sahara Star, Western Express Highway, Jayanagar East",
       "street2": "Hotel Sahara Star",
-      "city": "Mumbai",
-      "state": "Maharashtra",
+      "city": "Jayanagar",
+      "state": "Bangalore",
       "country": "India",
-      "postalcode": "400057"
+      "postalcode": "560041"
     },
-    "address": "201, Balaji Niwas, Linking Road, Bandra West, Mumbai",
+    "address": "201, Ground no. 1, Government Road, Jayanagar, Bangalore",
     "dietary_restrictions": [
       {
         "key": "10665",
@@ -108,10 +108,10 @@
   {
     "location_id": "2034923",
     "name": "Aditya Alisinghania",
-    "latitude": "19.104528",
-    "longitude": "72.850892",
+    "latitude": "12.956370",
+    "longitude": "77.695061",
     "timezone": "Asia/Kolkata",
-    "location_string": "Mumbai, Maharashtra",
+    "location_string": "Marathahalli, Bng",
     "image": {
       "url": "https://res.cloudinary.com/techitcloud/image/upload/v1675360007/house-pic-3_svthtx.jpg"
     },
@@ -123,7 +123,7 @@
     "neighborhood_info": [
       {
         "location_id": "15621466",
-        "name": "Andheri East"
+        "name": "Marathahalli East"
       }
     ],
     "ride_providers": ["olaCabs"],
@@ -131,14 +131,14 @@
     "phone": "+91 22 3980 7444",
     "email": "info@saharastar.com",
     "address_obj": {
-      "street1": "Hotel Sahara Star, Western Express Highway, Vile Parle East",
+      "street1": "Hotel Sahara Star, Western Express Highway, Marathahalli East",
       "street2": "Hotel Sahara Star",
-      "city": "Mumbai",
-      "state": "Maharashtra",
+      "city": "Marathahalli",
+      "state": "Bangalore",
       "country": "India",
-      "postalcode": "400057"
+      "postalcode": "560037"
     },
-    "address": "1001, Sky Tower, New Link Road, Andheri West",
+    "address": "1001, Sky Tower, New Link Road, Marathahalli, Bangalore",
     "dietary_restrictions": [
       {
         "key": "10665",
