@@ -1,9 +1,22 @@
 import React, { useState } from "react";
 import Navbar from "@/ui/Navbar";
 import RoomCard from "@/ui/RoomCard";
+import { getPlacesData } from "./api";
 
 function FindMatch() {
   const [isRooms, setIsRooms] = useState(true);
+  const [searchLocation, setSearchLocation] = useState("");
+  const [roomData, setRoomData] = useState([]);
+
+  const getAllPlacesFn = async () => {
+    const data = await getPlacesData();
+    setRoomData(data);
+  };
+
+  React.useEffect(() => {
+    getAllPlacesFn();
+  }, []);
+
   return (
     <div className="find-match-body">
       <Navbar />
@@ -119,11 +132,7 @@ function FindMatch() {
         </button>
       </div>
       <div className="content-wrapper px-[5vw] mb-[5vh]">
-        <RoomCard />
-        <RoomCard />
-        <RoomCard />
-        <RoomCard />
-        <RoomCard />
+        {roomData && roomData.map((room) => <RoomCard roomDetail={room} />)}
       </div>
     </div>
   );
