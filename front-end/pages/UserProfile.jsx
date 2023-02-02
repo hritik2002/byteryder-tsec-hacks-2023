@@ -7,7 +7,7 @@ const UserProfile = () => {
       <Navbar />
       <main class="profile-page">
         <section class="relative block min-h-[75vh]">
-          <div class="background absolute top-0 w-full h-full bg-center bg-cover">
+          <div class="background-user absolute top-0 w-full h-full bg-center bg-cover">
             <span
               id="blackOverlay"
               class="w-full h-full absolute bg-[rgb(181, 140, 17)]"
