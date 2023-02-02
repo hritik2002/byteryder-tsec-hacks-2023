@@ -7,7 +7,7 @@ const RoomCard = ({ roomDetail }) => {
 
   return (
     <div className="room-card-wrapper">
-      <div class=" max-w-xs bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+      <div class="house-card max-w-xs bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
         <a href="#">
           <img class="rounded-lg" src={roomDetail.image.url} alt="house" />
         </a>
