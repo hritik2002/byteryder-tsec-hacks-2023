@@ -3,6 +3,7 @@ import Navbar from "@/ui/Navbar";
 import InterestedHouses from "@/ui/InterestedHouses";
 
 const UserProfile = () => {
+  const userData = {};
   return (
     <div className="user-profile-body">
       <Navbar />
@@ -59,13 +60,13 @@ const UserProfile = () => {
                     <div className="flex justify-center py-4 lg:pt-4 pt-8">
                       <div className="mr-4 p-3 text-center">
                         <span className="text-xl font-bold block uppercase tracking-wide text-blueGray-600">
-                          20
+                          {userData.age}
                         </span>
                         <span className="text-sm text-blueGray-400">Age</span>
                       </div>
                       <div className="mr-4 p-3 text-center">
                         <span className="text-xl font-bold block capitalize tracking-wide text-blueGray-600">
-                          Male
+                          {userData.gender}
                         </span>
                         <span className="text-sm text-blueGray-400">
                           Gender
@@ -73,7 +74,7 @@ const UserProfile = () => {
                       </div>
                       <div className="lg:mr-4 p-3 text-center">
                         <span className="text-xl font-bold block capitalize tracking-wide text-blueGray-600">
-                          unmarried
+                          {userData.status}
                         </span>
                         <span className="text-sm text-blueGray-400">
                           Status
@@ -84,32 +85,27 @@ const UserProfile = () => {
                 </div>
                 <div className="text-center mt-2">
                   <h3 className="text-4xl font-semibold leading-normal text-blueGray-700 mb-2">
-                    Jenna Stones
+                    {userData.name}
                   </h3>
-                  <div className="text-sm leading-normal mt-0 mb-2 text-blueGray-400 font-bold uppercase">
-                    <i className="fas fa-map-marker-alt mr-2 text-lg text-blueGray-400"></i>
-                    Bandra West, Mumbai
+                  <div className="text-m leading-normal mt-0 mb-2 text-blueGray-400 font-bold uppercase">
+                    {/* <i className="fas fa-map-marker-alt mr-2 text-lg text-blueGray-400"></i> */}
+                    {userData.city}
                   </div>
                   <ul className="list-disc w-fit mx-auto">
-                    <li className="mb-2 text-blueGray-600 mt-10 text-left">
-                      {/* <i className="fas fa-briefcase mr-2 text-lg text-blueGray-400"></i> */}
-                      Currently working as a Software Developer
+                    <li className="mb-2 text-blueGray-600 text-left">
+                      {userData.message}
                     </li>
                     <li className="mb-2 text-blueGray-600 text-left">
-                      Undergraduate, Studying Computer engineering at TSEC
+                      Contact Number : {userData.contact_no}
                     </li>
                     <li className="mb-2 text-blueGray-600 text-left">
-                      Looking for rooms and currently interested in <b>10</b>{" "}
-                      places
+                      Health problems: {userData.health_description}
                     </li>
                     <li className="mb-2 text-blueGray-600 text-left">
-                      Health problems: None, healthy
+                      Eats <b className="text-green-600">{userData.eat}</b> food
                     </li>
                     <li className="mb-2 text-blueGray-600 text-left">
-                      Eats <b className="text-green-600">Veg</b> food
-                    </li>
-                    <li className="mb-2 text-blueGray-600 text-left">
-                      Smokes or Drinking habits: None
+                      Smokes or Drinking habits: {userData.drinking}
                     </li>
                   </ul>
                 </div>
@@ -117,11 +113,7 @@ const UserProfile = () => {
                   <div className="flex flex-wrap justify-center">
                     <div className="w-full lg:w-9/12 px-4">
                       <p className="mb-4 text-lg leading-relaxed text-blueGray-700">
-                        An artist of considerable range, Jenna the name taken by
-                        Melbourne-raised, Brooklyn-based Nick Murphy writes,
-                        performs and records all of his own music, giving it a
-                        warm, intimate feel with a solid groove structure. An
-                        artist of considerable range.
+                        {userData.desc}
                       </p>
                       {/* <a href="#pablo" className="font-normal text-pink-500">
                         Show more
