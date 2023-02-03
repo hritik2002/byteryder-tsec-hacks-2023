@@ -14,6 +14,17 @@ export const LoginUserFn = async (creds) => {
     console.log(`Fetch data Error : ${error}`);
   }
 };
+export const GetUserProfile = async () => {
+  try {
+    const data = await axios.post(`http://localhost:8000/api/auth/getoneprofile`,{
+      
+    });
+    console.log(data);
+    return data;
+  } catch (error) {
+    console.log(`Fetch data Error : ${error}`);
+  }
+};
 
 export const getOneHouseDetailFn = async (payload) => {
   console.log(payload, "payload");

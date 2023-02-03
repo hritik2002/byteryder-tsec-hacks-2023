@@ -15,7 +15,7 @@
     "message": "Looking for travel buddies",
     "name": "Jane Doe",
     "city": "Mumbai",
-    "status": "Single",
+    "status": "Unmarried",
     "eat": "non-veg",
     "gender": "male"
   },
@@ -55,7 +55,7 @@
     "message": "Looking for friends who love nature and music",
     "name": "Jimmy Clark",
     "city": "Patna",
-    "status": "Single",
+    "status": "Married",
     "eat": "veg",
     "gender": "male"
   },
@@ -69,13 +69,13 @@
     "drinking": false,
     "contact_no": "9876987515",
     "dob": "1997-02-14",
-    "age": 23,
+    "age": "23",
     "desc": "I am a fitness enthusiast and love to go to the gym and play sports. I am also a foodie and love to try different cuisines.",
     "health_description": "NA",
     "message": "Looking for fitness partners and food buddies",
     "name": "Sarah Johnson",
     "city": "Mumbai",
-    "status": "In a relationship",
+    "status": "Married",
     "eat": "veg",
     "gender": "female"
   },
@@ -95,7 +95,7 @@
     "message": "Looking for friends who share similar interests",
     "name": "Alice",
     "city": "Mumbai",
-    "status": "Single",
+    "status": "Unmarried",
     "eat": "non-veg",
     "gender": "female"
   }
