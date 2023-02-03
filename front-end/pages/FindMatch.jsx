@@ -26,7 +26,6 @@ function FindMatch() {
   };
 
   useEffect(() => {
-    console.log("a;slfjasld");
     if (wordEntered.length == 0) {
       setRoomData(totalRooms);
     }
@@ -193,12 +192,13 @@ function FindMatch() {
             </svg>
             Search
           </button>
-          <button
-            type="submit"
+          <a
+            href="http://localhost:3001"
+            target={"_blank"}
             class="w-auto inline-flex items-center justify-center px-[2em] py-[1.25em] ml-2 text-md font-medium text-white bg-blue-700 rounded-lg border border-blue-700 hover:bg-blue-800 focus:outline-none dark:bg-blue-600 dark:hover:bg-blue-700 "
           >
             View on Map
-          </button>
+          </a>
         </form>
       </div>
       <div className="toggle-wrapper flex justify-center mt-[4em] mb-[3em]">
