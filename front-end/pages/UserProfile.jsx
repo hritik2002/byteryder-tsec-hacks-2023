@@ -2,24 +2,28 @@ import React from "react";
 import Navbar from "@/ui/Navbar";
 import InterestedHouses from "@/ui/InterestedHouses";
 import { useEffect, useState } from "react";
-import { useRouter } from "next/router";
-import { getUserById } from "./api";
+import { GetUserProfile } from "./api";
 
 const UserProfile = () => {
   const [userData, setData] = useState();
-  const [userDetail, setUserDetail] = useState({});
-  const router = useRouter();
-  const { id } = router.query;
+  const [loading, setLoading] = useState(true);
 
-  const fetchHouseDetail = async () => {
-    let data = await getUserById({ id });
-    if (data) setUserDetail(data);
-    console.log("userDetail: ", userDetail);
+  const fn1 = async () => {
+    let dat = await GetUserProfile();
+    setData(dat.data);
   };
 
   useEffect(() => {
-    fetchHouseDetail();
+    fn1();
+    if (!typeof window || !typeof localStorage) {
+      setLoading(true);
+      return <></>;
+    } else setLoading(false);
   }, []);
+  if (loading) return <div>Loading...</div>;
+  if (!typeof window) {
+    return <></>;
+  }
 
   return (
     <div className="user-profile-body">
@@ -65,12 +69,21 @@ const UserProfile = () => {
                   </div>
                   <div className="w-full lg:w-4/12 px-4 lg:order-3 lg:text-right lg:self-center">
                     <div className="py-6 px-3 mt-32 sm:mt-0">
-                      <button
-                        className="bg-blue-500 hover:bg-blue-600 uppercase text-white font-bold hover:shadow-md shadow text-md px-6 py-3 rounded outline-none focus:outline-none sm:mr-2 mb-1 ease-linear transition-all duration-150"
-                        type="button"
-                      >
-                        Connect
-                      </button>
+                      {localStorage.getItem(userData?.id) ? (
+                        <button className=" uppercase text-white font-bold hover:shadow-md shadow text-md px-6 py-3 rounded outline-none focus:outline-none sm:mr-2 mb-1 ease-linear transition-all duration-150 text-blue-500">
+                          Request Sent
+                        </button>
+                      ) : (
+                        <button
+                          className="bg-blue-500 hover:bg-blue-600 uppercase text-white font-bold hover:shadow-md shadow text-md px-6 py-3 rounded outline-none focus:outline-none sm:mr-2 mb-1 ease-linear transition-all duration-150"
+                          type="button"
+                          onClick={() =>
+                            localStorage.setItem(userData?.id, true)
+                          }
+                        >
+                          Connect
+                        </button>
+                      )}
                     </div>
                   </div>
                   <div className="w-full lg:w-4/12 px-4 lg:order-1">

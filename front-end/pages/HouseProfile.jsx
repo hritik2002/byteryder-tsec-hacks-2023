@@ -3,6 +3,7 @@ import Navbar from "@/ui/Navbar";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { getOneHouseDetailFn } from "./api";
+import { BarGraph } from "@/ui/Bargraph";
 
 const HouseProfile = () => {
   const router = useRouter();
@@ -150,6 +151,7 @@ const HouseProfile = () => {
           </div>
         </section>
       </main>
+      <BarGraph />
     </div>
   );
 };
