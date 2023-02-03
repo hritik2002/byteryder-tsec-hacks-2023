@@ -97,7 +97,7 @@ const HouseProfile = () => {
                     <div class="w-full lg:w-4/12 px-4 lg:text-right lg:self-center">
                       <div class="py-6 px-3 sm:mt-0">
                         <button
-                          class="border-solid border-2 border-black-100 bg-white hover:bg-blue-300 uppercase text-black font-bold hover:shadow-md shadow text-md px-6 py-3 rounded outline-none focus:outline-none sm:mr-2 mb-1 ease-linear transition-all duration-150"
+                          class=" border-solid border-2 border-black-100 bg-white hover:bg-blue-300 uppercase text-black font-bold hover:shadow-md shadow text-md px-6 py-3 rounded outline-none focus:outline-none sm:mr-2 mb-1 ease-linear transition-all duration-150"
                           type="button"
                         >
                           Interested

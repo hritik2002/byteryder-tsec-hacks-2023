@@ -61,7 +61,7 @@ a {
   height: 300px;
   aspect-ratio: 1;
   border-radius: 50%;
-  background-image: url("../public/profile-pic.jpg");
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN3m-uIgTYqxaXl6Zb0bI9e_GJacnENUXyRw&usqp=CAU");
   background-size: cover;
   background-repeat: no-repeat;
 }
