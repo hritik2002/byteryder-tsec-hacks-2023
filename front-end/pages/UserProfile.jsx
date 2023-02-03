@@ -1,20 +1,24 @@
 import React from "react";
 import Navbar from "@/ui/Navbar";
 import InterestedHouses from "@/ui/InterestedHouses";
-import { useEffect, useState } from "react"
-import { GetUserProfile } from "./api";
+import { useEffect, useState } from "react";
+import { useRouter } from "next/router";
+import { getUserById } from "./api";
 
-const UserProfile = () => { 
+const UserProfile = () => {
+  const [userData, setData] = useState();
+  const [userDetail, setUserDetail] = useState({});
+  const router = useRouter();
+  const { id } = router.query;
 
-  const [userData,setData]=useState();
-  const fn1 = async () => {
-    let dat = await GetUserProfile();
-    console.log("datttt",dat);
-    setData(dat.data);
+  const fetchHouseDetail = async () => {
+    let data = await getUserById({ id });
+    if (data) setUserDetail(data);
+    console.log("userDetail: ", userDetail);
   };
 
   useEffect(() => {
-    fn1();
+    fetchHouseDetail();
   }, []);
 
   return (
@@ -25,7 +29,7 @@ const UserProfile = () => {
           <div className="background-user absolute top-0 w-full h-full bg-center bg-cover">
             <span
               id="blackOverlay"
-              className="w-full h-full absolute bg-[rgb(181, 140, 17)]"
+              className="w-full h-full absolute bg-[#f5f5dc]"
             ></span>
           </div>
           <div className="svg-wrapper top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden h-70-px">
@@ -115,7 +119,8 @@ const UserProfile = () => {
                       Health problems: {userData?.health_description}
                     </li>
                     <li className="mb-2 text-blueGray-600 text-left">
-                      Eats <b className="text-green-600">{userData?.eat}</b> food
+                      Eats <b className="text-green-600">{userData?.eat}</b>{" "}
+                      food
                     </li>
                     <li className="mb-2 text-blueGray-600 text-left">
                       Smokes or Drinking habits: {userData?.drinking}

@@ -16,9 +16,10 @@ export const LoginUserFn = async (creds) => {
 };
 export const GetUserProfile = async () => {
   try {
-    const data = await axios.post(`http://localhost:8000/api/auth/getoneprofile`,{
-      
-    });
+    const data = await axios.post(
+      `http://localhost:8000/api/auth/getoneprofile`,
+      {}
+    );
     console.log(data);
     return data;
   } catch (error) {
@@ -57,10 +58,11 @@ export const getPlacesData = async (type, sw, ne) => {
 
 export const getUserById = async (id) => {
   try {
-    const { data } = await axios.get(
-      `http://localhost:8000/api/auth//getoneprofile`,
+    console.log("id :", id);
+    const { data } = await axios.post(
+      `http://localhost:8000/api/auth/getoneprofile`,
       {
-        id,
+        id: id,
       }
     );
 

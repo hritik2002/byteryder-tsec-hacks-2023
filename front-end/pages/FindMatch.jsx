@@ -35,7 +35,7 @@ function FindMatch() {
   const getLocationBasedOnSearch = (e) => {
     e.preventDefault();
     if (isRooms) {
-      const roomArray = roomData.filter((value) => {
+      const roomArray = roomData?.filter((value) => {
         console.log(
           value.address.includes(wordEntered),
           "value.address.includes(wordEntered)"
@@ -45,7 +45,7 @@ function FindMatch() {
       // console.log(roomArray, "roomArray");
       setTempRoomData(roomArray);
     } else {
-      const userArray = userData.filter((value) => {
+      const userArray = userData?.filter((value) => {
         console.log(
           value.city.includes(wordEntered),
           "value.address.includes(wordEntered)"
