@@ -11,11 +11,13 @@ import { getAllUser } from "./api";
 function FindMatch() {
   const [isRooms, setIsRooms] = useState(true);
   const [searchLocation, setSearchLocation] = useState("");
-  const [roomData, setRoomData] = useState([]);
   const [filteredData, setFilteredData] = useState([]);
   const [wordEntered, setWordEntered] = useState("");
   const [totalRooms, setTotalRooms] = useState([]);
+  const [roomData, setRoomData] = useState([]);
+  const [tempRoomData, setTempRoomData] = useState([]);
   const [userData, setUserData] = useState();
+  const [tempUserData, setTempUserData] = useState();
 
   const handleClick = (loc) => {
     setSearchLocation(loc);
@@ -32,15 +34,27 @@ function FindMatch() {
 
   const getLocationBasedOnSearch = (e) => {
     e.preventDefault();
-    const roomArray = roomData.filter((value) => {
-      console.log(
-        value.address.includes(wordEntered),
-        "value.address.includes(wordEntered)"
-      );
-      return value.address.includes(wordEntered);
-    });
-    console.log(roomArray, "roomArray");
-    setRoomData(roomArray);
+    if (isRooms) {
+      const roomArray = roomData.filter((value) => {
+        console.log(
+          value.address.includes(wordEntered),
+          "value.address.includes(wordEntered)"
+        );
+        return value.address.includes(wordEntered);
+      });
+      // console.log(roomArray, "roomArray");
+      setTempRoomData(roomArray);
+    } else {
+      const userArray = userData.filter((value) => {
+        console.log(
+          value.city.includes(wordEntered),
+          "value.address.includes(wordEntered)"
+        );
+        return value.city.includes(wordEntered);
+      });
+      console.log(userArray, "userArray");
+      setTempUserData(userArray);
+    }
   };
 
   const handleFilter = (event) => {
@@ -62,6 +76,7 @@ function FindMatch() {
 
   const getAllPlacesFn = async () => {
     const data = await getPlacesData();
+    setTempRoomData(data);
     setRoomData(data);
     setTotalRooms(data);
   };
@@ -72,6 +87,7 @@ function FindMatch() {
 
   const getAllUsersFn = async () => {
     const data = await getAllUser();
+    setTempUserData(data);
     setUserData(data);
   };
 
@@ -215,12 +231,12 @@ function FindMatch() {
       </div>
       <div className="content-wrapper px-[5vw] mb-[5vh]">
         {isRooms &&
-          roomData &&
-          roomData.map((room) => <RoomCard roomDetail={room} />)}
+          tempRoomData &&
+          tempRoomData.map((room) => <RoomCard roomDetail={room} />)}
         {!isRooms &&
-          userData &&
-          userData.length != 0 &&
-          userData.map((user) => <UserCard userData={user} />)}
+          tempUserData &&
+          tempUserData.length != 0 &&
+          tempUserData.map((user) => <UserCard userData={user} />)}
       </div>
     </div>
   );

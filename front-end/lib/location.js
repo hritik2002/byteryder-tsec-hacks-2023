@@ -12,7 +12,7 @@ export const locationArr = [
     label: "Thane",
   },
   {
-    label: "Banglore",
+    label: "Bangalore",
   },
   {
     label: "Goregaon",

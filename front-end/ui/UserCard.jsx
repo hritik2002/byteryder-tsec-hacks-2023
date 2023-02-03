@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const UserCard = ({ userData }) => {
@@ -45,8 +46,13 @@ const UserCard = ({ userData }) => {
             </span>
           </div>
           <div className="view-more mt-6 flex justify-between items-center">
-            <a
-              href="#"
+            <Link
+              href={{
+                pathname: "/UserProfile",
+                query: {
+                  id: userData.id,
+                },
+              }}
               class="inline-flex items-center  px-5 py-3 text-sm font-medium text-center text-black bg-[#FEF3D3] rounded-lg hover:bg-[#FFE395] focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
             >
               View more
@@ -63,7 +69,7 @@ const UserCard = ({ userData }) => {
                   clip-rule="evenodd"
                 ></path>
               </svg>
-            </a>
+            </Link>
             <svg
               onClick={toggleInterest}
               xmlns="http://www.w3.org/2000/svg"
