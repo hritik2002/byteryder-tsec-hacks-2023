@@ -33,7 +33,7 @@ const UserProfile = () => {
           <div className="background-user absolute top-0 w-full h-full bg-center bg-cover">
             <span
               id="blackOverlay"
-              className="w-full h-full absolute bg-[#f5f5dc]"
+              className="w-full h-full absolute bg-[rgb(181, 140, 17)]"
             ></span>
           </div>
           <div className="svg-wrapper top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden h-70-px">

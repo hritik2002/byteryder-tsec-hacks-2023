@@ -6,6 +6,15 @@ import { getOneHouseDetailFn } from "./api";
 import { BarGraph } from "@/ui/Bargraph";
 
 const HouseProfile = () => {
+  const arr = ["jane doe", "john doe", "jimmy clark", "alice"];
+
+  let random = Math.floor(Math.random() * arr.length);
+  let pers1 = arr[random];
+  arr.splice(random, 1);
+
+  random = Math.floor(Math.random() * arr.length);
+  let pers2 = arr[random];
+
   const router = useRouter();
   const { id } = router.query;
   const [houseDetail, setHouseDetail] = useState({});
@@ -125,6 +134,10 @@ const HouseProfile = () => {
                     <li class="mb-2 text-blueGray-600 text-left">
                       {/* <i class="fas fa-university mr-2 text-lg text-blueGray-400"></i> */}
                       Safety Rating: <b>{houseDetail?.safety_rating}</b>
+                    </li>
+                    <li class="mb-2 text-blueGray-600 text-left">
+                      {/* <i class="fas fa-university mr-2 text-lg text-blueGray-400"></i> */}
+                      Interested Persons: {pers1}, {pers2}
                     </li>
                   </ul>
                 </div>

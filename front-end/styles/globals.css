@@ -64,9 +64,10 @@ a {
   height: 300px;
   aspect-ratio: 1;
   border-radius: 50%;
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN3m-uIgTYqxaXl6Zb0bI9e_GJacnENUXyRw&usqp=CAU");
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-nL0vJZ5DiB1ShuTJgy4G6el4YCqpgcTPww&usqp=CAU");
   background-size: cover;
   background-repeat: no-repeat;
+  /* object-fit: 90%; */
 }
 .house-pic {
   height: 320px;
