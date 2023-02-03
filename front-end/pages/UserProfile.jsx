@@ -2,42 +2,28 @@ import React from "react";
 import Navbar from "@/ui/Navbar";
 import InterestedHouses from "@/ui/InterestedHouses";
 import { useEffect, useState } from "react";
-import { useRouter } from "next/router";
-import { getUserById } from "./api";
+import { GetUserProfile } from "./api";
 
 const UserProfile = () => {
-  const router = useRouter();
-  const userDetail = {
-    id: 1,
-    username: "jane_doe",
-    url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-nL0vJZ5DiB1ShuTJgy4G6el4YCqpgcTPww&usqp=CAU",
-    email: "jane_doe@gmail.com",
-    password: "1234",
-    habit: "None",
-    contact_no: "9876987512",
-    dob: "2000-01-01",
-    age: 20,
-    desc: "I am a passionate traveler who loves to explore new cultures and cuisines. I am a creative person and love to try new things in life.",
-    health_description: "NA",
-    message: "Looking for travel buddies",
-    name: "Jane Doe",
-    city: "Mumbai",
-    status: "Unmarried",
-    eat: "non-veg",
-    gender: "male",
-  };
-  // const fetchHouseDetail = async () => {
-  //   let { id } = router.query;
-  //   if (!id) id = 3;
-  //   console.log("id ", id);
-  //   let data = await getUserById({ id });
-  //   if (data) setUserDetail(data);
-  //   console.log("userDetail: ", userDetail);
-  // };
+  const [userData, setData] = useState();
+  const [loading, setLoading] = useState(true);
 
-  // useEffect(() => {
-  //   fetchHouseDetail();
-  // }, []);
+  const fn1 = async () => {
+    let dat = await GetUserProfile();
+    setData(dat.data);
+  };
+
+  useEffect(() => {
+    fn1();
+    if (!typeof window || !typeof localStorage) {
+      setLoading(true);
+      return <></>;
+    } else setLoading(false);
+  }, []);
+  if (loading) return <div>Loading...</div>;
+  if (!typeof window) {
+    return <></>;
+  }
 
   return (
     <div className="user-profile-body">
@@ -47,7 +33,7 @@ const UserProfile = () => {
           <div className="background-user absolute top-0 w-full h-full bg-center bg-cover">
             <span
               id="blackOverlay"
-              className="w-full h-full absolute bg-[#f5f5dc]"
+              className="w-full h-full absolute bg-[rgb(181, 140, 17)]"
             ></span>
           </div>
           <div className="svg-wrapper top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden h-70-px">
@@ -73,7 +59,7 @@ const UserProfile = () => {
               <div className="px-6">
                 <div className="flex flex-wrap justify-center h-fit mb-[-6em]">
                   <div className="profile-pic-wrapper w-full lg:w-3/12 px-4 lg:order-2 flex justify-center">
-                    <div className="profile-pic relative border-solid border-none ml-10">
+                    <div className="profile-pic relative border-solid border-none">
                       {/* <img
                         alt="..."
                         src="https://demos.creative-tim.com/notus-js/assets/img/team-2-800x800.jpg"
@@ -83,25 +69,34 @@ const UserProfile = () => {
                   </div>
                   <div className="w-full lg:w-4/12 px-4 lg:order-3 lg:text-right lg:self-center">
                     <div className="py-6 px-3 mt-32 sm:mt-0">
-                      <button
-                        className="bg-blue-500 hover:bg-blue-600 uppercase text-white font-bold hover:shadow-md shadow text-md px-6 py-3 rounded outline-none focus:outline-none sm:mr-2 mb-1 ease-linear transition-all duration-150"
-                        type="button"
-                      >
-                        Connect
-                      </button>
+                      {localStorage.getItem(userData?.id) ? (
+                        <button className=" uppercase text-white font-bold hover:shadow-md shadow text-md px-6 py-3 rounded outline-none focus:outline-none sm:mr-2 mb-1 ease-linear transition-all duration-150 text-blue-500">
+                          Request Sent
+                        </button>
+                      ) : (
+                        <button
+                          className="bg-blue-500 hover:bg-blue-600 uppercase text-white font-bold hover:shadow-md shadow text-md px-6 py-3 rounded outline-none focus:outline-none sm:mr-2 mb-1 ease-linear transition-all duration-150"
+                          type="button"
+                          onClick={() =>
+                            localStorage.setItem(userData?.id, true)
+                          }
+                        >
+                          Connect
+                        </button>
+                      )}
                     </div>
                   </div>
                   <div className="w-full lg:w-4/12 px-4 lg:order-1">
                     <div className="flex justify-center py-4 lg:pt-4 pt-8">
                       <div className="mr-4 p-3 text-center">
                         <span className="text-xl font-bold block uppercase tracking-wide text-blueGray-600">
-                          {userDetail?.age}
+                          {userData?.age}
                         </span>
                         <span className="text-sm text-blueGray-400">Age</span>
                       </div>
                       <div className="mr-4 p-3 text-center">
                         <span className="text-xl font-bold block capitalize tracking-wide text-blueGray-600">
-                          {userDetail?.gender}
+                          {userData?.gender}
                         </span>
                         <span className="text-sm text-blueGray-400">
                           Gender
@@ -109,7 +104,7 @@ const UserProfile = () => {
                       </div>
                       <div className="lg:mr-4 p-3 text-center">
                         <span className="text-xl font-bold block capitalize tracking-wide text-blueGray-600">
-                          {userDetail?.status}
+                          {userData?.status}
                         </span>
                         <span className="text-sm text-blueGray-400">
                           Status
@@ -120,28 +115,28 @@ const UserProfile = () => {
                 </div>
                 <div className="text-center mt-2">
                   <h3 className="text-4xl font-semibold leading-normal text-blueGray-700 mb-2">
-                    {userDetail?.name}
+                    {userData?.name}
                   </h3>
                   <div className="text-m leading-normal mt-0 mb-2 text-blueGray-400 font-bold uppercase">
                     {/* <i className="fas fa-map-marker-alt mr-2 text-lg text-blueGray-400"></i> */}
-                    {userDetail?.city}
+                    {userData?.city}
                   </div>
                   <ul className="list-disc w-fit mx-auto">
                     <li className="mb-2 text-blueGray-600 text-left">
-                      {userDetail?.message}
+                      {userData?.message}
                     </li>
                     <li className="mb-2 text-blueGray-600 text-left">
-                      Contact Number : {userDetail?.contact_no}
+                      Contact Number : {userData?.contact_no}
                     </li>
                     <li className="mb-2 text-blueGray-600 text-left">
-                      Health problems: {userDetail?.health_description}
+                      Health problems: {userData?.health_description}
                     </li>
                     <li className="mb-2 text-blueGray-600 text-left">
-                      Eats <b className="text-green-600">{userDetail?.eat}</b>{" "}
+                      Eats <b className="text-green-600">{userData?.eat}</b>{" "}
                       food
                     </li>
                     <li className="mb-2 text-blueGray-600 text-left">
-                      Smokes or Drinking habits: {userDetail?.habit}
+                      Smokes or Drinking habits: {userData?.drinking}
                     </li>
                   </ul>
                 </div>
@@ -149,7 +144,7 @@ const UserProfile = () => {
                   <div className="flex flex-wrap justify-center">
                     <div className="w-full lg:w-9/12 px-4">
                       <p className="mb-4 text-lg leading-relaxed text-blueGray-700">
-                        {userDetail?.desc}
+                        {userData?.desc}
                       </p>
                       {/* <a href="#pablo" className="font-normal text-pink-500">
                         Show more
