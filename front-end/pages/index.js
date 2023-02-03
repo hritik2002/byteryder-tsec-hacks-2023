@@ -6,6 +6,7 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 import Navbar from "@/ui/Navbar";
+import Footer from "@/ui/Footer";
 
 export default function Home() {
   useEffect(() => {
@@ -37,20 +38,23 @@ export default function Home() {
         <Navbar />
         <div className="relative opacity-0 hero-wrapper box-border overflow-x-hidden flex justify-between min-w-[100vw] min-h-[100vh] items-center sm:px-[5vw]">
           <div className="w-3/5">
-            <h1 className="text-5xl font-bold pb-6">
-              Find the perfect room mates in the best places
+            <h1 className="text-[3.75rem] font-bold pb-[0.5em] leading-[1.1]">
+              Come and Find your perfect shared living space.
             </h1>
-            <p className="pb-6 w-4/5">
-              is simply dummy text of the printing and typesetting industry.
-              Lorem Ipsum has been the industry's standard dummy text
-            </p>
-            <div className="btn-wrapper w-full flex justify-left pt-[2em]">
-              <button className="cursor-pointer py-[1em] px-[2.5em] rounded bg-[#FEF3A1] shadow-2xl font-medium hover:bg-[#FFE395]">
-                Find rooms/roommates
-              </button>
-              {/* <button className="ml-[4em] cursor-pointer py-[1em] px-[2.5em] rounded bg-[#FEF3D3] shadow-2xl font-medium hover:bg-[#FFE395]">
+            <div className="flex items-start justify-between pt-[2em]">
+              <p className="pb-[0.5em]">
+                Experience the comfort of a hassle-free room search and matching
+                process with us and find an ideal living experience anywhere in
+                the world.
+              </p>
+              <div className="btn-wrapper w-full flex justify-items-end pr-[2em] ml-[3rem]">
+                <button className="cursor-pointer py-[1em] px-[2.5em] rounded bg-[#FEF3A1] shadow-2xl font-medium hover:bg-[#FFE395]">
+                  Find room/roommates
+                </button>
+                {/* <button className="ml-[4em] cursor-pointer py-[1em] px-[2.5em] rounded bg-[#FEF3D3] shadow-2xl font-medium hover:bg-[#FFE395]">
                 Find room mates
               </button> */}
+              </div>
             </div>
           </div>
           {/* translate-y-[20vh] */}
@@ -68,10 +72,10 @@ export default function Home() {
           <div className="services-wrapper flex justify-between">
             <div className="card mt-[25vh] max-w-[25vw] bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
               <div className="flex flex-col items-center pb-10 relative">
-                <div className="h-[27.5vh] w-[27.5vh] absolute top-[-50%] translate-y-[50%]">
-                  <img src="/service-2.png" alt="service-1" />
+                <div className="h-[150px] w-[150px] absolute top-[-50px] ">
+                  <img src="/service-1-1.png" alt="service-1" />
                 </div>
-                <h4 className="mb-1 mt-[2.5em] text-2xl font-semibold text-gray-900 dark:text-white">
+                <h4 className="mb-1 mt-[4.5em] text-2xl font-semibold text-gray-900 dark:text-white">
                   Find Rooms
                 </h4>
                 <span className="text-sm text-gray-500 dark:text-gray-400 px-[3em] mt-[1em]">
@@ -90,10 +94,10 @@ export default function Home() {
             </div>
             <div className="card mt-[25vh] max-w-[25vw] bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
               <div className="flex flex-col items-center pb-10 relative">
-                <div className="h-[22.5vh] w-[22.5vh] absolute top-[-50%] translate-y-[50%]">
+                <div className="max-h-[150px] w-[150px] absolute top-[-50px]">
                   <img src="/service-1.png" alt="service-1" />
                 </div>
-                <h4 className="mb-1 mt-[2.5em] text-2xl font-semibold text-gray-900 dark:text-white">
+                <h4 className="mb-1 mt-[4.5em] text-2xl font-semibold text-gray-900 dark:text-white">
                   Find Roommates
                 </h4>
                 <span className="text-sm text-gray-500 dark:text-gray-400 px-[3em] mt-[1em]">
@@ -112,10 +116,10 @@ export default function Home() {
             </div>
             <div className="card mt-[25vh] max-w-[25vw]  bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
               <div className="flex flex-col items-center pb-10 relative">
-                <div className="h-[27.5vh] w-[27.5vh] absolute top-[-50%] translate-y-[30%]">
+                <div className="max-h-[150px] w-[150px] absolute top-[-50px]">
                   <img src="/service-3.png" alt="service-1" />
                 </div>
-                <h4 className="mb-1 mt-[2.5em] text-2xl font-semibold text-gray-900 dark:text-white">
+                <h4 className="mb-1 mt-[4.5em] text-2xl font-semibold text-gray-900 dark:text-white">
                   An ideal combination
                 </h4>
                 <span className="text-sm text-gray-500 dark:text-gray-400 px-[3em] mt-[1em]">
@@ -134,6 +138,7 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <Footer />
       </div>
     </AppProvider>
   );

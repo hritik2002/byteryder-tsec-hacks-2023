@@ -1,9 +1,12 @@
 import React, { useState } from "react";
 import Navbar from "@/ui/Navbar";
 import RoomCard from "@/ui/RoomCard";
+import UserCard from "@/ui/UserCard";
 import { getPlacesData } from "./api";
 import { locationArr } from "@/lib/location";
 import { useEffect } from "react";
+import { getUserById } from "./api";
+import { getAllUser } from "./api";
 
 function FindMatch() {
   const [isRooms, setIsRooms] = useState(true);
@@ -12,6 +15,7 @@ function FindMatch() {
   const [filteredData, setFilteredData] = useState([]);
   const [wordEntered, setWordEntered] = useState("");
   const [totalRooms, setTotalRooms] = useState([]);
+  const [userData, setUserData] = useState();
 
   const handleClick = (loc) => {
     setSearchLocation(loc);
@@ -58,13 +62,21 @@ function FindMatch() {
 
   const getAllPlacesFn = async () => {
     const data = await getPlacesData();
-    console.log(data);
     setRoomData(data);
     setTotalRooms(data);
   };
 
   React.useEffect(() => {
     getAllPlacesFn();
+  }, []);
+
+  const getAllUsersFn = async () => {
+    const data = await getAllUser();
+    setUserData(data);
+  };
+
+  React.useEffect(() => {
+    getAllUsersFn();
   }, []);
 
   return (
@@ -142,6 +154,7 @@ function FindMatch() {
               })}
             </div>
           )}
+
           <button
             // type="submit"
             onClick={getLocationBasedOnSearch}
@@ -201,7 +214,13 @@ function FindMatch() {
         </button>
       </div>
       <div className="content-wrapper px-[5vw] mb-[5vh]">
-        {roomData && roomData.map((room) => <RoomCard roomDetail={room} />)}
+        {isRooms &&
+          roomData &&
+          roomData.map((room) => <RoomCard roomDetail={room} />)}
+        {!isRooms &&
+          userData &&
+          userData.length != 0 &&
+          userData.map((user) => <UserCard userData={user} />)}
       </div>
     </div>
   );

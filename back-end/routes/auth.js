@@ -54,6 +54,22 @@ router.get("/getUser", auth, async (req, res) => {
 router.get("/getRoomsData", (req, res) => {
   res.send(data);
 });
+const profileData = require("./profile.json");
+router.post("/getoneprofile", (req, res) => {
+  for (let i = 0; i < profileData.length; i++) {
+    console.log(profileData[i].id, req.body.id);
+    if (profileData[i].id === req.body.id) {
+      let finaldata = profileData[i];
+      return res.send({
+        finaldata,
+      });
+    }
+  }
+  res.send(profileData);
+});
+router.post("/aluser", (req, res) => {
+  res.send(profileData);
+});
 router.post("/createuser", async (req, res) => {
   let success = false;
   try {

@@ -1,6 +1,6 @@
 import React from "react";
 
-const UserCard = ({ roomDetail }) => {
+const UserCard = ({ userData }) => {
   const toggleInterest = () => {
     // send userDetail along with user authToken to the api
   };
@@ -9,35 +9,41 @@ const UserCard = ({ roomDetail }) => {
     <div className="room-card-wrapper">
       <div class=" max-w-xs bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
         <a href="#">
-          <img class="rounded-lg" src={roomDetail.image.url} alt="house" />
+          <img class="rounded-lg" src={userData.url} alt="house" />
         </a>
         <div class="p-6 ">
           <a href="#">
             <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-              {roomDetail.location_string}
+              {userData.username}
             </h5>
           </a>
           <div className="flex">
             <span class="mb-2 font-normal text-gray-700 dark:text-gray-400">
-              Flat: {roomDetail.dietary_restrictions[0]?.name}
+              Age:
               <span className="font-medium text-[1.25rem] ml-[.5em] text-black">
-                {roomDetail.area}
+                {userData.age}
               </span>
             </span>
             <span class="ml-12 mb-2 font-normal text-gray-700 dark:text-gray-400">
-              Rent:
-              <span className="font-small text-[1rem] ml-[.5em] text-black">
-                {roomDetail.price_level}
+              Gender:
+              <span className="font-medium text-[1.25rem] ml-[.5em] text-black">
+                {userData.gender}
               </span>
             </span>
           </div>
-          <span class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+          <div class=" mb-2 font-normal text-gray-700 dark:text-gray-400">
+            Status:
+            <span className="font-small text-[1rem] ml-[.5em] text-black">
+              {userData.status}
+            </span>
+          </div>
+          <div class="mb-3 font-normal text-gray-700 dark:text-gray-400">
             No. of people interested:
             <span className="font-medium text-[1.25rem] ml-[.5em] text-black">
               {" "}
               10
             </span>
-          </span>
+          </div>
           <div className="view-more mt-6 flex justify-between items-center">
             <a
               href="#"
