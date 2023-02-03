@@ -12,7 +12,10 @@
   /* overflow-x: hidden; */
 }
 
-.btn-wrapper > button,
+.btn-wrapper > button {
+  /* box-shadow: 0px 0px 32px 3px rgba(0, 0, 0, 0.2); */
+  box-shadow: none;
+}
 .room-card-wrapper {
   box-shadow: 0px 0px 32px 3px rgba(0, 0, 0, 0.2);
 }

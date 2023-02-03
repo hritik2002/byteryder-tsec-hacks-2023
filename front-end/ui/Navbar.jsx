@@ -10,7 +10,7 @@ function Navbar() {
       return <></>;
     } else setLoading(false);
   }, []);
-  if(loading) return <div>Loading...</div>
+  if (loading) return <div>Loading...</div>;
   if (!typeof window) {
     return <></>;
   }
@@ -24,12 +24,12 @@ function Navbar() {
       </div>
       <div className="center-nav flex items-center justify-self-center">
         <ul className="flex flex-row list-none lg:ml-auto">
-          <li className="nav-item cursor-pointer hover:opacity-50">
+          <li className="nav-item cursor-pointer hover:opacity-50 ml-[6em]">
             <a href="/FindMatch">Find room/roommates</a>
           </li>
-          <li className="nav-item ml-[3em] cursor-pointer hover:opacity-50">
+          {/* <li className="nav-item ml-[3em] cursor-pointer hover:opacity-50">
             <a href="#">About us</a>
-          </li>
+          </li> */}
         </ul>
       </div>
       <div>
