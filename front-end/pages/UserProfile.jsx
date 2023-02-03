@@ -6,20 +6,38 @@ import { useRouter } from "next/router";
 import { getUserById } from "./api";
 
 const UserProfile = () => {
-  const [userData, setData] = useState();
-  const [userDetail, setUserDetail] = useState({});
   const router = useRouter();
-  const { id } = router.query;
-
-  const fetchHouseDetail = async () => {
-    let data = await getUserById({ id });
-    if (data) setUserDetail(data);
-    console.log("userDetail: ", userDetail);
+  const userDetail = {
+    id: 1,
+    username: "jane_doe",
+    url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-nL0vJZ5DiB1ShuTJgy4G6el4YCqpgcTPww&usqp=CAU",
+    email: "jane_doe@gmail.com",
+    password: "1234",
+    habit: "None",
+    contact_no: "9876987512",
+    dob: "2000-01-01",
+    age: 20,
+    desc: "I am a passionate traveler who loves to explore new cultures and cuisines. I am a creative person and love to try new things in life.",
+    health_description: "NA",
+    message: "Looking for travel buddies",
+    name: "Jane Doe",
+    city: "Mumbai",
+    status: "Unmarried",
+    eat: "non-veg",
+    gender: "male",
   };
+  // const fetchHouseDetail = async () => {
+  //   let { id } = router.query;
+  //   if (!id) id = 3;
+  //   console.log("id ", id);
+  //   let data = await getUserById({ id });
+  //   if (data) setUserDetail(data);
+  //   console.log("userDetail: ", userDetail);
+  // };
 
-  useEffect(() => {
-    fetchHouseDetail();
-  }, []);
+  // useEffect(() => {
+  //   fetchHouseDetail();
+  // }, []);
 
   return (
     <div className="user-profile-body">
@@ -55,7 +73,7 @@ const UserProfile = () => {
               <div className="px-6">
                 <div className="flex flex-wrap justify-center h-fit mb-[-6em]">
                   <div className="profile-pic-wrapper w-full lg:w-3/12 px-4 lg:order-2 flex justify-center">
-                    <div className="profile-pic relative border-solid border-none">
+                    <div className="profile-pic relative border-solid border-none ml-10">
                       {/* <img
                         alt="..."
                         src="https://demos.creative-tim.com/notus-js/assets/img/team-2-800x800.jpg"
@@ -77,13 +95,13 @@ const UserProfile = () => {
                     <div className="flex justify-center py-4 lg:pt-4 pt-8">
                       <div className="mr-4 p-3 text-center">
                         <span className="text-xl font-bold block uppercase tracking-wide text-blueGray-600">
-                          {userData?.age}
+                          {userDetail?.age}
                         </span>
                         <span className="text-sm text-blueGray-400">Age</span>
                       </div>
                       <div className="mr-4 p-3 text-center">
                         <span className="text-xl font-bold block capitalize tracking-wide text-blueGray-600">
-                          {userData?.gender}
+                          {userDetail?.gender}
                         </span>
                         <span className="text-sm text-blueGray-400">
                           Gender
@@ -91,7 +109,7 @@ const UserProfile = () => {
                       </div>
                       <div className="lg:mr-4 p-3 text-center">
                         <span className="text-xl font-bold block capitalize tracking-wide text-blueGray-600">
-                          {userData?.status}
+                          {userDetail?.status}
                         </span>
                         <span className="text-sm text-blueGray-400">
                           Status
@@ -102,28 +120,28 @@ const UserProfile = () => {
                 </div>
                 <div className="text-center mt-2">
                   <h3 className="text-4xl font-semibold leading-normal text-blueGray-700 mb-2">
-                    {userData?.name}
+                    {userDetail?.name}
                   </h3>
                   <div className="text-m leading-normal mt-0 mb-2 text-blueGray-400 font-bold uppercase">
                     {/* <i className="fas fa-map-marker-alt mr-2 text-lg text-blueGray-400"></i> */}
-                    {userData?.city}
+                    {userDetail?.city}
                   </div>
                   <ul className="list-disc w-fit mx-auto">
                     <li className="mb-2 text-blueGray-600 text-left">
-                      {userData?.message}
+                      {userDetail?.message}
                     </li>
                     <li className="mb-2 text-blueGray-600 text-left">
-                      Contact Number : {userData?.contact_no}
+                      Contact Number : {userDetail?.contact_no}
                     </li>
                     <li className="mb-2 text-blueGray-600 text-left">
-                      Health problems: {userData?.health_description}
+                      Health problems: {userDetail?.health_description}
                     </li>
                     <li className="mb-2 text-blueGray-600 text-left">
-                      Eats <b className="text-green-600">{userData?.eat}</b>{" "}
+                      Eats <b className="text-green-600">{userDetail?.eat}</b>{" "}
                       food
                     </li>
                     <li className="mb-2 text-blueGray-600 text-left">
-                      Smokes or Drinking habits: {userData?.drinking}
+                      Smokes or Drinking habits: {userDetail?.habit}
                     </li>
                   </ul>
                 </div>
@@ -131,7 +149,7 @@ const UserProfile = () => {
                   <div className="flex flex-wrap justify-center">
                     <div className="w-full lg:w-9/12 px-4">
                       <p className="mb-4 text-lg leading-relaxed text-blueGray-700">
-                        {userData?.desc}
+                        {userDetail?.desc}
                       </p>
                       {/* <a href="#pablo" className="font-normal text-pink-500">
                         Show more
