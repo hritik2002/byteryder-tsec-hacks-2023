@@ -24,7 +24,7 @@ function Navbar() {
       </div>
       <div className="center-nav flex items-center justify-self-center">
         <ul className="flex flex-row list-none lg:ml-auto">
-          <li className="nav-item cursor-pointer hover:opacity-50 ml-[6em]">
+          <li className="nav-item cursor-pointer hover:opacity-50 ml-[2em]">
             <a href="/FindMatch">Find room/roommates</a>
           </li>
           {/* <li className="nav-item ml-[3em] cursor-pointer hover:opacity-50">
@@ -34,7 +34,10 @@ function Navbar() {
       </div>
       <div>
         {localStorage.getItem("Token") ? (
-          <a href="/UserProfile">Profile</a>
+          <div className="flex gap-[40px]">
+            <a href="/UserProfile">Profile</a>
+            <p>Sign out</p>
+          </div>
         ) : (
           <ul className="flex">
             <li className="nav-item cursor-pointer hover:opacity-50">

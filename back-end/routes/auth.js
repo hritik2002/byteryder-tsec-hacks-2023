@@ -66,33 +66,35 @@ router.get("/getUser", auth, async (req, res) => {
     user,
   });
 });
-const profileData = require("./profile.json");
-router.post("/getoneprofile", (req, res)=> {
-  console.log(profileData[2])
-  res.send(profileData[2]);
-    // for(let i=0; i<profileData.length; i++){
-    //     console.log(profileData[i].id, req.body.id);
-    //     if(profileData[i].id === req.body.id){
-    //         let finaldata = profileData[i]
-    //         return res.send({
-    //             finaldata
-    //         })
-    //     }
-    // }
-    // res.send(profileData)
-})
-router.post("/aluser", (req, res)=>{
-  res.send(profileData);
-})
+// const profileData = require("./profile.json");
+// router.post("/getoneprofile", (req, res)=> {
+//   console.log(profileData[2])
+//   res.send(profileData[2]);
+//     // for(let i=0; i<profileData.length; i++){
+//     //     console.log(profileData[i].id, req.body.id);
+//     //     if(profileData[i].id === req.body.id){
+//     //         let finaldata = profileData[i]
+//     //         return res.send({
+//     //             finaldata
+//     //         })
+//     //     }
+//     // }
+//     // res.send(profileData)
+// })
+// router.post("/aluser", (req, res)=>{
+//   res.send(profileData);
+// })
 router.get("/getRoomsData", (req, res) => {
   res.send(data);
 });
 const profileData = require("./profile.json");
 router.post("/getoneprofile", (req, res) => {
+  console.log("inside", req.body);
   for (let i = 0; i < profileData.length; i++) {
-    console.log(profileData[i].id, req.body.id);
+    // console.log(profileData[i].id, req.body.id);
     if (profileData[i].id === req.body.id) {
       let finaldata = profileData[i];
+      console.log("final: ", finaldata);
       return res.send({
         finaldata,
       });
